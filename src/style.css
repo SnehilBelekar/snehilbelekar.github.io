@@ -62,7 +62,7 @@ button:focus-visible {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
 
 /* General styles */
@@ -83,7 +83,7 @@ body {
 }
 
 header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 20px;
 }
 
@@ -204,7 +204,7 @@ padding: 20px; /* Add some padding around the content */
 display: flex; /* Use flexbox for side-by-side layout */
 flex-wrap: wrap; /* Allow wrapping on smaller screens */
 gap: 20px; /* Gap between image and content */
-align-items: center; /* Vertically center content */
+align-items: left; /* Vertically center content */
 color: cadetblue;
 }
 
