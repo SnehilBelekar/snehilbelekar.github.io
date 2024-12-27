@@ -31,6 +31,19 @@
       <main>
         <Section v-for="section in resumeData.sections" :key="section.title" :section="section" />
       </main>
+      <footer class="footer">
+        <div class="icons">
+          <a href="https://www.linkedin.com/in/snehilbelekar/">
+            <img class="icon" src="/linkedIn.svg" alt="LinkedIn">
+          </a>
+          <a href="https://github.com/Snehil03">
+            <img class="icon" src="/github.svg" alt="GitHub">
+          </a>
+          <a href="mailto:snehil.belekar@yahoo.com">
+            <img class="icon" src="/email.svg" alt="Email">
+          </a>
+        </div>
+      </footer>
     </div>
   </div>
 </template>
