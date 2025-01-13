@@ -59,6 +59,7 @@ const resumeData: ResumeData = {
               Own and implement DevOps strategy.
               Documentation and adding ADR(Architectural Decision Review)
               Cost- Optimization and procurement to reduce extra cost.
+              Current cost for running full ecosystem is around 3,5k and we generate revenue of 800k from the applications deployed.
 
               AWS to Azure migration
               Kubernetes cluster upgrade and further adoption to make current applications compatible to newer kubernetes versions.
