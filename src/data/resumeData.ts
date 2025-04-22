@@ -3,7 +3,7 @@ import type { ResumeData } from '../types';
 const resumeData: ResumeData = {
   personalInfo: {
     name: 'Snehil Belekar',
-    title: 'Technical Architect - Digital Twin ',
+    title: 'Solutions/ Technical Architect - Digital Twin Platform',
     email: 'snehil.belekar@yahoo.com',
     phone: '(+32) 478841486',
     location: 'Mechelen, Belgium',
@@ -15,22 +15,22 @@ const resumeData: ResumeData = {
       title: 'Summary',
       type: 'text',
       content: `
-      - Platform design , define and evolution strategy for Digital twin program.
-      - Leading AWS landing zone towards Multi cloud strategy.
-      - Leading AZURE landing zone towards Multi cloud strategy.
-      - Implement Governance and compliance framework and backed in to the ecosystem that Security takes a leverage out of it.
-      - Security controls implementation to the operational process via GITOPS
-      - Well verse with ISO27001, ISO23247, ISO27002, ISO27005, ISO 27701 , ISO22301 , NIS2, 
-      - Implementing FinOps way of working
-      - GitOps way of working for Digital Twin program.
-      - Design, define strategy for Mulesoft as part RTF fabric and deploying and managing application on the go.
-      - Managing external vendor and acted as Trusted Advisor.
-      - Leading and evangelising metrics based decision. 
-      - Business continuity and Disaster recovery plan.
-      - Standardisation and maintainability of overall platform.
-      - IT professional with excellent track record in DevOps and Agile practices .
-      - Proactive and confident individual with excellent technical, communication skills and problem solving ability.
-      - Worked across diverse technologies with a good blend of Programming knowledge .`, // Your summary
+      Platform design , define and evolution strategy for Digital twin program.
+      Leading AWS landing zone towards Multi cloud strategy.
+      Leading AZURE landing zone towards Multi cloud strategy.
+      Implement Governance and compliance framework and backed in to the ecosystem that Security takes a leverage out of it.
+      Security controls implementation to the operational process via GITOPS
+      Well verse with ISO27001, ISO23247, ISO27002, ISO27005, ISO 27701 , ISO22301 , NIS2, 
+      Implementing FinOps way of working
+      GitOps way of working for Digital Twin program.
+      Design, define strategy for Mulesoft as part RTF fabric and deploying and managing application on the go.
+      Managing external vendor and acted as Trusted Advisor.
+      Leading and evangelising metrics based decision. 
+      Business continuity and Disaster recovery plan.
+      Standardisation and maintainability of overall platform.
+      IT professional with excellent track record in DevOps and Agile practices .
+      Proactive and confident individual with excellent technical, communication skills and problem solving ability.
+      Worked across diverse technologies with a good blend of Programming knowledge .`, // Your summary
     },
     {
       title: 'Experience',
