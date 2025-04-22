@@ -29,7 +29,27 @@
         </div>
       </header> 
       <main>
-        <Section v-for="section in resumeData.sections" :key="section.title" :section="section" />
+        <div class="panel-wrapper">
+          <aside class="left-panel">
+            <section v-for="panelSection in leftPanelSections" :key="panelSection.title">
+              <h3>{{ panelSection.title }}</h3>
+              <ul v-if="panelSection.type === 'list'">
+                <li v-for="item in panelSection.items" :key="item.content">{{ item.content }}</li>
+              </ul>
+              <div v-else-if="panelSection.type === 'text'">
+                {{ panelSection.content }}
+              </div>
+            </section>
+          </aside>
+          <div class="right-panel">
+            <Section
+              v-for="section in rightPanelSections"
+              :key="section.title"
+              :section="section"
+            />
+          </div>
+       </div>
+        
       </main>
       <footer class="footer">
         <div class="icons">
@@ -58,4 +78,12 @@ const scrollToSection = (sectionTitle: string) => {
     element.scrollIntoView({ behavior: 'smooth' });
   }
 };
+
+const leftPanelSections = resumeData.sections.filter(section =>
+  ['Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education'].includes(section.title)
+);
+
+const rightPanelSections = resumeData.sections.filter(
+  section => !['Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education'].includes(section.title)
+);
 </script>
