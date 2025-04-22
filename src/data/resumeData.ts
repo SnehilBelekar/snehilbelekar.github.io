@@ -5,7 +5,7 @@ const resumeData: ResumeData = {
     name: 'Snehil Belekar',
     title: 'Technical Architect - Digital Twin ',
     email: 'snehil.belekar@yahoo.com',
-    phone: '(+32) 492344350',
+    phone: '(+32) 478841486',
     location: 'Mechelen, Belgium',
     linkedin: 'https://www.linkedin.com/in/snehilbelekar',
     github: 'https://github.com/snehil03',
