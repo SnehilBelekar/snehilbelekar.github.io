@@ -194,61 +194,61 @@ const resumeData: ResumeData = {
       ],
       
     },
-{
-  title: 'Skills',
-  type: 'list',
-  items: [
-        { content: 'Cloud Platforms (AWS, Azure, GCP)' },
-        { content: 'Agile tools : Jira, Confluence, DevOps Tasks, Kanban' },
-        { content: 'IAC : Terraform, Azure DevOps' },
-        { content: 'Security analysis tools : Snyk, Qualys' },
-        { content: 'Sentry' },
-        { content: 'CI : Bitbucket, Jenkins' },
-        { content: 'Monitoring : Prometheus, Grafana, Alerting' },
-        { content: 'Vitualization : Docker, Kubernetes, Helm, Skaffold.' },
-        { content: 'Encryption and Decryption : SOPS' },
-        { content: 'Authentication : Cognito, Microsoft AD, Auth0' },
-        { content: 'Authorization : Auth0' },
-        { content: 'TLS, mTLS : Cert-Manager, DigiCert' },
-        { content: 'Data Science / Analysis : Pandas' },
-        // ... your skills
-      ],
-    },
-{
-  title: 'Education',
-    type: 'text',
-      content: 'Bachelor of Technology, India', // Your education
-    },
-{
-      title: 'Languages',
+    {
+      title: 'Skills',
       type: 'list',
       items: [
-        { content: 'English (Native)' },
-        { content: 'Nederlands (Conversational)' },
-        { content: 'French ( Conversational )' }
-        // ...add more if needed...
+            { content: 'Cloud Platforms (AWS, Azure, GCP)' },
+            { content: 'Agile tools : Jira, Confluence, DevOps Tasks, Kanban' },
+            { content: 'IAC : Terraform, Azure DevOps' },
+            { content: 'Security analysis tools : Snyk, Qualys' },
+            { content: 'Sentry' },
+            { content: 'CI : Bitbucket, Jenkins' },
+            { content: 'Monitoring : Prometheus, Grafana, Alerting' },
+            { content: 'Vitualization : Docker, Kubernetes, Helm, Skaffold.' },
+            { content: 'Encryption and Decryption : SOPS' },
+            { content: 'Authentication : Cognito, Microsoft AD, Auth0' },
+            { content: 'Authorization : Auth0' },
+            { content: 'TLS, mTLS : Cert-Manager, DigiCert' },
+            { content: 'Data Science / Analysis : Pandas' },
+            // ... your skills
+          ],
+        },
+    {
+      title: 'Education',
+        type: 'text',
+          content: 'Bachelor of Technology, India', // Your education
+        },
+    {
+          title: 'Languages',
+          type: 'list',
+          items: [
+            { content: 'English (Native)' },
+            { content: 'Nederlands (Conversational)' },
+            { content: 'French ( Conversational )' }
+            // ...add more if needed...
+          ],
+        },
+    {
+          title: 'Soft Skills',
+          type: 'list',
+          items: [
+            { content: 'Teamwork' },
+            { content: 'Communication' },
+            { content: 'Problem Solving' },
+            { content: 'Adaptability' },
+            { content: 'Time Management' }
+            // ...add more if needed...
+          ],
+        },
+    {
+      title: 'Certifications',
+        type: 'list',
+          items: [
+            { content: 'AWS Certified Solutions Architect – Associate' },
+          ],
+        }
       ],
-    },
-{
-      title: 'Soft Skills',
-      type: 'list',
-      items: [
-        { content: 'Teamwork' },
-        { content: 'Communication' },
-        { content: 'Problem Solving' },
-        { content: 'Adaptability' },
-        { content: 'Time Management' }
-        // ...add more if needed...
-      ],
-    },
-{
-  title: 'Certifications',
-    type: 'list',
-      items: [
-        { content: 'AWS Certified Solutions Architect – Associate' },
-      ],
-    }
-  ],
 };
 
 export default resumeData;

@@ -41,8 +41,20 @@
       <!-- Panels Below Summary -->
       <div class="panel-wrapper">
         <aside class="left-panel">
-          <section v-for="panelSection in leftPanelSections" :key="panelSection.title">
-            <h3>{{ panelSection.title }}</h3>
+          <section
+            v-for="panelSection in leftPanelSections"
+            :key="panelSection.title"
+            :id="panelSection.title.toLowerCase().replace(/\s+/g, '-')"
+          >
+            <h2>
+              <a
+                href="#"
+                @click.prevent="scrollToSection(panelSection.title)"
+                style="cursor:pointer; color:inherit; text-decoration:underline;"
+              >
+                {{ panelSection.title }}
+              </a>
+            </h2>
             <ul v-if="panelSection.type === 'list'">
               <li
                 v-for="item in panelSection.items"
