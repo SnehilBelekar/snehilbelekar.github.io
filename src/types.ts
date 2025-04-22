@@ -31,9 +31,7 @@ export interface ProjectItem {
   technologies?: string;
 }
 
-export interface ListItem {
-  content: string;
-}
+export type ListItem = { content: string };
 
 export interface ResumeData {
   personalInfo: PersonalInfo;

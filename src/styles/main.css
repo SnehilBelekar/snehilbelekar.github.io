@@ -313,6 +313,67 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   padding: 1rem;
 }
 
+/* Sticky nav styles */
+.sticky-nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 100;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 0;
+  width: 100%;
+}
+
+.sticky-nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.sticky-nav li {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.sticky-nav a {
+  color: #393a55;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 1.08rem;
+  transition: color 0.2s;
+  display: inline-block;
+  padding: 0.5rem 0;
+}
+
+.sticky-nav a:hover {
+  color: #0077b6;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments for sticky nav */
+@media (max-width: 900px) {
+  .sticky-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+  .sticky-nav li {
+    width: 100%;
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .sticky-nav a {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    width: 100%;
+    display: block;
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 900px) {
   .panel-wrapper {

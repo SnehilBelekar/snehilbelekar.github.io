@@ -7,7 +7,7 @@
         </li>
       </ul>
     </nav>
-     <div class="content-wrapper">
+    <div class="content-wrapper">
       <header class="header-container">
         <div class="header-content">
           <div class="image-container">
@@ -27,30 +27,37 @@
             </div>
           </div>
         </div>
-      </header> 
-      <main>
-        <div class="panel-wrapper">
-          <aside class="left-panel">
-            <section v-for="panelSection in leftPanelSections" :key="panelSection.title">
-              <h3>{{ panelSection.title }}</h3>
-              <ul v-if="panelSection.type === 'list'">
-                <li v-for="item in panelSection.items" :key="item.content">{{ item.content }}</li>
-              </ul>
-              <div v-else-if="panelSection.type === 'text'">
-                {{ panelSection.content }}
-              </div>
-            </section>
-          </aside>
-          <div class="right-panel">
-            <Section
-              v-for="section in rightPanelSections"
-              :key="section.title"
-              :section="section"
-            />
-          </div>
-       </div>
-        
-      </main>
+      </header>
+      <!-- Summary Section Below Header -->
+      <section class="summary-section">
+        <Section :section="summarySection" />
+      </section>
+      <!-- Panels Below Summary -->
+      <div class="panel-wrapper">
+        <aside class="left-panel">
+          <section v-for="panelSection in leftPanelSections" :key="panelSection.title">
+            <h3>{{ panelSection.title }}</h3>
+            <ul v-if="panelSection.type === 'list'">
+              <li
+                v-for="item in panelSection.items"
+                :key="typeof item.content === 'string' ? item.content : JSON.stringify(item)"
+              >
+                {{ item.content }}
+              </li>
+            </ul>
+            <div v-else-if="panelSection.type === 'text'">
+              {{ panelSection.content }}
+            </div>
+          </section>
+        </aside>
+        <div class="right-panel">
+          <Section
+            v-for="section in rightPanelSections"
+            :key="section.title"
+            :section="section"
+          />
+        </div>
+      </div>
       <footer class="footer">
         <div class="icons">
           <a href="https://www.linkedin.com/in/snehilbelekar/">
@@ -73,17 +80,29 @@ import resumeData from './data/resumeData';
 import Section from './components/Section.vue';
 
 const scrollToSection = (sectionTitle: string) => {
-  const element = document.getElementById(sectionTitle.toLowerCase());
+  const id = sectionTitle.toLowerCase().replace(/\s+/g, '-');
+  const element = document.getElementById(id);
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth' });
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 };
+
+const summarySection = resumeData.sections.find(section => section.title === 'Summary');
 
 const leftPanelSections = resumeData.sections.filter(section =>
   ['Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education'].includes(section.title)
 );
 
 const rightPanelSections = resumeData.sections.filter(
-  section => !['Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education'].includes(section.title)
+  section => !['Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education', 'Summary'].includes(section.title)
 );
 </script>
+
+<style scoped>
+.summary-section {
+  margin: 24px 0 0 0;
+  padding: 16px 24px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+</style>
