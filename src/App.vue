@@ -8,7 +8,7 @@
         <li>
           <!-- Print Button -->
           <button class="print-btn" @click="printPage" title="Print Resume">
-            🖨️ Print
+            🖨️ 
           </button>
         </li>      </ul>
       
