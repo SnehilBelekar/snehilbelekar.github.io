@@ -5,7 +5,13 @@
         <li v-for="section in resumeData.sections" :key="section.title">
           <a :href="'#' + section.title.toLowerCase()" @click.prevent="scrollToSection(section.title)">{{ section.title }}</a>
         </li>
-      </ul>
+        <li>
+          <!-- Print Button -->
+          <button class="print-btn" @click="printPage" title="Print Resume">
+            🖨️ Print
+          </button>
+        </li>      </ul>
+      
     </nav>
     <div class="content-wrapper">
       <header class="header-container">
@@ -75,6 +81,7 @@
   </div>
 </template>
 
+
 <script setup lang="ts">
 import resumeData from './data/resumeData';
 import Section from './components/Section.vue';
@@ -87,6 +94,10 @@ const scrollToSection = (sectionTitle: string) => {
   }
 };
 
+const printPage = () => {
+  window.print();
+};
+
 const summarySection = resumeData.sections.find(section => section.title === 'Summary');
 
 const leftPanelSections = resumeData.sections.filter(section =>
@@ -97,12 +108,3 @@ const rightPanelSections = resumeData.sections.filter(
   section => !['Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education', 'Summary'].includes(section.title)
 );
 </script>
-
-<style scoped>
-.summary-section {
-  margin: 24px 0 0 0;
-  padding: 16px 24px;
-  background: #f9f9f9;
-  border-radius: 8px;
-}
-</style>
