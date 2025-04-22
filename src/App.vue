@@ -29,7 +29,7 @@
         </div>
       </header>
       <!-- Summary Section Below Header -->
-      <section class="summary-section">
+      <section class="summary-section" v-if="summarySection">
         <Section :section="summarySection" />
       </section>
       <!-- Panels Below Summary -->
@@ -40,9 +40,9 @@
             <ul v-if="panelSection.type === 'list'">
               <li
                 v-for="item in panelSection.items"
-                :key="typeof item.content === 'string' ? item.content : JSON.stringify(item)"
+                :key="(item as any).content"
               >
-                {{ item.content }}
+                {{ (item as any).content }}
               </li>
             </ul>
             <div v-else-if="panelSection.type === 'text'">
