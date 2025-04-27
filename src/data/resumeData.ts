@@ -30,7 +30,7 @@ const resumeData: ResumeData = {
       Standardisation and maintainability of overall platform.
       IT professional with excellent track record in DevOps and Agile practices .
       Proactive and confident individual with excellent technical, communication skills and problem solving ability.
-      Worked across diverse technologies with a good blend of Programming knowledge .`, // Your summary
+      Worked across diverse technologies with a good blend of Programming knowledge .`, 
     },
     {
       title: 'Experience',
@@ -220,16 +220,6 @@ const resumeData: ResumeData = {
           content: 'Bachelor of Technology, India', // Your education
         },
     {
-          title: 'Languages',
-          type: 'list',
-          items: [
-            { content: 'English (Native)' },
-            { content: 'Nederlands (Conversational)' },
-            { content: 'French ( Conversational )' }
-            // ...add more if needed...
-          ],
-        },
-    {
           title: 'Soft Skills',
           type: 'list',
           items: [
@@ -247,8 +237,18 @@ const resumeData: ResumeData = {
           items: [
             { content: 'AWS Certified Solutions Architect – Associate' },
           ],
-        }
+        },
+    {
+      title: 'Languages',
+      type: 'list',
+      items: [
+        { content: 'English (Native)' },
+        { content: 'Nederlands (Conversational)' },
+        { content: 'French ( Conversational )' }
+        // ...add more if needed...
       ],
+    }
+  ],
 };
 
 export default resumeData;

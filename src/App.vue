@@ -1,17 +1,23 @@
 <template>
   <div id="app">
     <nav class="sticky-nav">
-      <ul>
+      <ul style="display: flex; align-items: center;">
         <li v-for="section in resumeData.sections" :key="section.title">
           <a :href="'#' + section.title.toLowerCase()" @click.prevent="scrollToSection(section.title)">{{ section.title }}</a>
         </li>
-        <li>
+        <li style="margin-left: auto; display: flex; align-items: center;">
+          <!-- Language Switcher -->
+          <select v-model="currentLang" class="lang-switcher" @change="changeLang" style="margin-right: 10px;">
+            <option value="EN">EN</option>
+            <option value="FR">FR</option>
+            <option value="NL">NL</option>
+          </select>
           <!-- Print Button -->
           <button class="print-btn" @click="printPage" title="Print Resume">
             🖨️ 
           </button>
-        </li>      </ul>
-      
+        </li>     
+      </ul>
     </nav>
     <div class="content-wrapper">
       <header class="header-container">
@@ -95,8 +101,53 @@
 
 
 <script setup lang="ts">
-import resumeData from './data/resumeData';
+import { ref, computed } from 'vue';
+import resumeDataEN from './data/resumeData';
+import resumeDataFR from './data/resumeDataFr';
+import resumeDataNL from './data/resumeDataNl';
 import Section from './components/Section.vue';
+
+const currentLang = ref('EN');
+
+const resumeData = computed(() => {
+  if (currentLang.value === 'FR') return resumeDataFR;
+  if (currentLang.value === 'NL') return resumeDataNL;
+  return resumeDataEN;
+});
+
+// Always use computed for personalInfo and summarySection
+const personalInfo = computed(() => resumeData.value.personalInfo);
+
+const summarySection = computed(() => {
+  // Support all possible summary titles in all languages
+  const summaryTitles = ['Summary', 'Résumé', 'Samenvatting'];
+  return resumeData.value.sections.find(section => summaryTitles.includes(section.title));
+});
+
+const leftPanelSections = computed(() =>
+  resumeData.value.sections.filter(section =>
+    [
+      'Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education',
+      'Compétences', 'Langues', 'Compétences douces', 'Certifications', 'Formation',
+      'Vaardigheden', 'Talen', 'Soft Skills', 'Certificeringen', 'Opleiding'
+    ].includes(section.title)
+  )
+);
+
+const rightPanelSections = computed(() =>
+  resumeData.value.sections.filter(
+    section =>
+      ![
+        'Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education', 'Summary',
+        'Compétences', 'Langues', 'Compétences douces', 'Certifications', 'Formation', 'Résumé',
+        'Vaardigheden', 'Talen', 'Soft Skills', 'Certificeringen', 'Opleiding', 'Samenvatting'
+      ].includes(section.title)
+  )
+);
+
+const changeLang = () => {
+  // No extra logic needed, computed properties will update automatically
+};
 
 const scrollToSection = (sectionTitle: string) => {
   const id = sectionTitle.toLowerCase().replace(/\s+/g, '-');
@@ -109,14 +160,4 @@ const scrollToSection = (sectionTitle: string) => {
 const printPage = () => {
   window.print();
 };
-
-const summarySection = resumeData.sections.find(section => section.title === 'Summary');
-
-const leftPanelSections = resumeData.sections.filter(section =>
-  ['Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education'].includes(section.title)
-);
-
-const rightPanelSections = resumeData.sections.filter(
-  section => !['Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education', 'Summary'].includes(section.title)
-);
 </script>
