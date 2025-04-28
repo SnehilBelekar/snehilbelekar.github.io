@@ -116,7 +116,7 @@ const resumeData = computed(() => {
 });
 
 // Always use computed for personalInfo and summarySection
-const personalInfo = computed(() => resumeData.value.personalInfo);
+// const personalInfo = computed(() => resumeData.value.personalInfo);
 
 const summarySection = computed(() => {
   // Support all possible summary titles in all languages
