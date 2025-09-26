@@ -37,10 +37,26 @@ const resumeData: ResumeData = {
       type: 'experience',
       items: [
         {
+          title: 'Technical Architect / Solutions Architect',
+          company: 'YPTO Nv',
+          dates: 'Feb 2025 - Present',
+          description: `Technical Architect Cloud & DC`, // Your experience description
+          responsibilities: [
+            ` Technical contributions to make the governance and compliance framework stronger.
+              Defining and implementing security controls as per ISO27001, ISO27002, ISO27005, ISO 27701 , ISO22301 , NIS2
+              Adopting FinOps framework and look for the ways to implement cost optimization techniques.
+              Leadership and mentoring for the projects to opt best possible solutions, which delivers value to the business. 
+              Also, reduces the cost and reduce maintenance overhead.
+              Strategic impact security enhancements , Contributed to hardening of golden image.
+              PAM for Databases for 9 databases flavours and 750+ DB instances.
+              AI certification project architected and delivered. `
+          ],
+        },
+        {
           title: 'Technical Architect - Digital Twin',
           company: 'Borealis Polymer Nv',
-          dates: 'Sept 2023 - Present',
-          description: `Architect for Digital twin program`, // Your experience description
+          dates: 'Sept 2023 - Jan 2025',
+          description: `Technical Architect for Digital twin program`, // Your experience description
           responsibilities: [
             `Design, Define and Implemented future proof storage solution in cloud infrastructure.
             Design and implemented platform for future application where existing platform can be reused and fast-paced cutting edge secured solution can be delivered at fast pace.
