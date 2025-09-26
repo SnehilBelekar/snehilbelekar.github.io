@@ -15,13 +15,21 @@ const resumeData: ResumeData = {
       title: 'Summary',
       type: 'text',
       content: `
+      Technology : 
       Platform design , define and evolution strategy for Digital twin program.
       Leading AWS landing zone towards Multi cloud strategy.
       Leading AZURE landing zone towards Multi cloud strategy.
+
+      Security :
       Implement Governance and compliance framework and backed in to the ecosystem that Security takes a leverage out of it.
+      PAM for Databases for 9 databases flavours and 750+ DB instances.
       Security controls implementation to the operational process via GITOPS
-      Well verse with ISO27001, ISO23247, ISO27002, ISO27005, ISO 27701 , ISO22301 , NIS2, 
+      Aligning with Security Architects and enforcing security controls as per ISO27001, ISO27002, ISO27005, ISO 27701 , ISO22301 , NIS2
+
+      FinOps :
       Implementing FinOps way of working
+
+      Automation | DevSecOps :
       GitOps way of working for Digital Twin program.
       Design, define strategy for Mulesoft as part RTF fabric and deploying and managing application on the go.
       Managing external vendor and acted as Trusted Advisor.
@@ -53,7 +61,7 @@ const resumeData: ResumeData = {
           ],
         },
         {
-          title: 'Technical Architect - Digital Twin',
+          title: 'Technical Architect',
           company: 'Borealis Polymer Nv',
           dates: 'Sept 2023 - Jan 2025',
           description: `Technical Architect for Digital twin program`, // Your experience description
@@ -72,21 +80,30 @@ const resumeData: ResumeData = {
           dates: 'Aug 2020 - Aug 2023',
           description: `DevSecOps Specialist`, // Your experience description
           responsibilities: [
-             `Co-Implemented CI/CD platform on Bitbucket.
+             `Strategy :
+              Co-Implemented CI/CD platform on Bitbucket.
               Implementing multi - cloud strategy for organization.
               Abstracting complexity of infrastructure in a IaC and created robust infrastructure in AWS, AZURE.
-              Improved security posture by implementing recommendations from industry acclaimed tools.
               Bridging the gap between Developers and Operations to speed up the overall delivery.
               Own and implement DevOps strategy.
+
+              Documentation :
               Documentation and adding ADR(Architectural Decision Review)
+              
+              FinOps :
               Cost- Optimization and procurement to reduce extra cost.
               Current cost for running full ecosystem is around 3,5k and we generate revenue of 800k from the applications deployed.
 
               AWS to Azure migration
               Kubernetes cluster upgrade and further adoption to make current applications compatible to newer kubernetes versions.
-              adding Zero trust security changes to Infrastructure.
+              
+              Security :
+              Zero trust security changes to Infrastructure.
+              Improved security posture by implementing recommendations from industry acclaimed tools.
               SNYK security compliance at Infrastructure, Images, Packages.
               Setup Oauth2 - proxy and migration to new artifact hub automated via Terraform.
+
+              Reusable templates / Advancements :
               Helm zero to hero(template project publication).
               Redis configuration in cluster mode.
               Setup Prometheus and Grafana stack for stack monitoring and setup an Alerting Systems around it.
@@ -95,17 +112,9 @@ const resumeData: ResumeData = {
               Infrastructure provisioning via automated flow of CI/ CD(Bitbucket Pipelines).
               Securing Azure setup with LDAP and additional security and policy addition. 
               Automated entire infrastructure using Terraform for Azure Architecture, creating IOT hub, Azure CDN and pgsql db.
-
               Helm charts to manage K8s packages.
               Sentry to do error tracking.
-              SonarQube to do code analysis.
-
-              AZURE :
-              AKS setup, ACR setup, IOT hub setup, Networking, Blob storage, Azure cost management, RBAC policy,
-              Azure Key Vault setup.
-
-              AWS :
-              EKS, ECR, EC2, lambda, PostgreSql, Auth0, Cognito, OIDC provider, AutoScaler`,
+              SonarQube to do code analysis.`
           ],
         },
         {
