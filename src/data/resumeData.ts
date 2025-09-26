@@ -3,7 +3,7 @@ import type { ResumeData } from '../types';
 const resumeData: ResumeData = {
   personalInfo: {
     name: 'Snehil Belekar',
-    title: 'Solutions/ Technical Architect - Digital Twin Platform',
+    title: 'Solutions/ Technical Architect',
     email: 'snehil.belekar@yahoo.com',
     phone: '(+32) 478841486',
     location: 'Mechelen, Belgium',
