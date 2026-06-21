@@ -20,7 +20,7 @@ describe('App print behavior by language', () => {
     expect(printSpy).not.toHaveBeenCalled();
   });
 
-  it('uses browser print for non-EN languages', async () => {
+  it('opens FR PDF when FR is selected', async () => {
     const openSpy = vi.spyOn(window, 'open').mockImplementation(() => window as Window);
     const printSpy = vi.spyOn(window, 'print').mockImplementation(() => {});
 
@@ -29,7 +29,20 @@ describe('App print behavior by language', () => {
     await wrapper.get('.lang-switcher').setValue('FR');
     await wrapper.get('.print-btn').trigger('click');
 
-    expect(printSpy).toHaveBeenCalledTimes(1);
-    expect(openSpy).not.toHaveBeenCalled();
+    expect(openSpy).toHaveBeenCalledWith('/resume/Snehil_Belekar_CV_FR.pdf', '_blank', 'noopener,noreferrer');
+    expect(printSpy).not.toHaveBeenCalled();
+  });
+
+  it('opens NL PDF when NL is selected', async () => {
+    const openSpy = vi.spyOn(window, 'open').mockImplementation(() => window as Window);
+    const printSpy = vi.spyOn(window, 'print').mockImplementation(() => {});
+
+    const wrapper = mount(App);
+
+    await wrapper.get('.lang-switcher').setValue('NL');
+    await wrapper.get('.print-btn').trigger('click');
+
+    expect(openSpy).toHaveBeenCalledWith('/resume/Snehil_Belekar_CV_NL.pdf', '_blank', 'noopener,noreferrer');
+    expect(printSpy).not.toHaveBeenCalled();
   });
 });

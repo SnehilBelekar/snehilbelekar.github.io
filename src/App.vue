@@ -150,6 +150,8 @@ const changeLang = () => {
 };
 
 const EN_RESUME_PDF_PATH = '/resume/Snehil_Belekar_CV.pdf';
+const FR_RESUME_PDF_PATH = '/resume/Snehil_Belekar_CV_FR.pdf';
+const NL_RESUME_PDF_PATH = '/resume/Snehil_Belekar_CV_NL.pdf';
 
 const scrollToSection = (sectionTitle: string) => {
   const id = sectionTitle.toLowerCase().replace(/\s+/g, '-');
@@ -160,12 +162,20 @@ const scrollToSection = (sectionTitle: string) => {
 };
 
 const printPage = () => {
-  if (currentLang.value === 'EN') {
-    const pdfWindow = window.open(EN_RESUME_PDF_PATH, '_blank', 'noopener,noreferrer');
+  const resumePdfByLang: Record<string, string> = {
+    EN: EN_RESUME_PDF_PATH,
+    FR: FR_RESUME_PDF_PATH,
+    NL: NL_RESUME_PDF_PATH,
+  };
+
+  const selectedResumePdf = resumePdfByLang[currentLang.value];
+
+  if (selectedResumePdf) {
+    const pdfWindow = window.open(selectedResumePdf, '_blank', 'noopener,noreferrer');
 
     // Fallback if popups are blocked by the browser.
     if (!pdfWindow) {
-      window.location.href = EN_RESUME_PDF_PATH;
+      window.location.href = selectedResumePdf;
     }
 
     return;
