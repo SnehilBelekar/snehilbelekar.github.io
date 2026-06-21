@@ -149,6 +149,8 @@ const changeLang = () => {
   // No extra logic needed, computed properties will update automatically
 };
 
+const EN_RESUME_PDF_PATH = '/resume/Snehil_Belekar_CV.pdf';
+
 const scrollToSection = (sectionTitle: string) => {
   const id = sectionTitle.toLowerCase().replace(/\s+/g, '-');
   const element = document.getElementById(id);
@@ -158,6 +160,17 @@ const scrollToSection = (sectionTitle: string) => {
 };
 
 const printPage = () => {
+  if (currentLang.value === 'EN') {
+    const pdfWindow = window.open(EN_RESUME_PDF_PATH, '_blank', 'noopener,noreferrer');
+
+    // Fallback if popups are blocked by the browser.
+    if (!pdfWindow) {
+      window.location.href = EN_RESUME_PDF_PATH;
+    }
+
+    return;
+  }
+
   window.print();
 };
 </script>
