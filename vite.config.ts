@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitest/config';
+import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
@@ -6,9 +6,5 @@ export default defineConfig({
   base: './', // Important! Match your repo name
   build: {
     outDir: 'dist',
-  },
-  test: {
-    environment: 'jsdom',
-    globals: true,
   },
 });
