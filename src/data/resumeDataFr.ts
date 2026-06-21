@@ -14,24 +14,30 @@ const resumeData: ResumeData = {
     {
       title: 'Résumé',
       type: 'text',
-      content: `
-      Conception, définition et stratégie d'évolution de la plateforme pour le programme Digital Twin.
-      Direction de la zone d’atterrissage AWS vers une stratégie multi-cloud.
-      Direction de la zone d’atterrissage AZURE vers une stratégie multi-cloud.
-      Mise en œuvre d’un cadre de gouvernance et de conformité intégré à l’écosystème pour renforcer la sécurité.
-      Implémentation des contrôles de sécurité dans les processus opérationnels via GITOPS.
-      Bonne connaissance des normes ISO27001, ISO23247, ISO27002, ISO27005, ISO27701, ISO22301, NIS2.
-      Mise en œuvre de la méthode FinOps.
-      Méthodologie GitOps pour le programme Digital Twin.
-      Conception et définition de la stratégie pour Mulesoft dans le cadre du tissu RTF, déploiement et gestion des applications.
-      Gestion des fournisseurs externes et rôle de conseiller de confiance.
-      Promotion de la prise de décision basée sur les métriques.
-      Plan de continuité d’activité et de reprise après sinistre.
-      Standardisation et maintenabilité de la plateforme globale.
-      Professionnel IT avec une excellente expérience en DevOps et pratiques Agile.
-      Individu proactif et confiant avec d’excellentes compétences techniques, de communication et de résolution de problèmes.
-      Expérience sur des technologies variées avec de solides connaissances en programmation.
-      `,
+      content: `Technologie:
+Conception, définition et stratégie d'évolution de la plateforme pour le programme Digital Twin.
+Direction de la zone d’atterrissage AWS vers une stratégie multi-cloud.
+Direction de la zone d’atterrissage AZURE vers une stratégie multi-cloud.
+
+Sécurité:
+Mise en œuvre d’un cadre de gouvernance et de conformité intégré à l’écosystème pour renforcer la sécurité.
+Implémentation des contrôles de sécurité dans les processus opérationnels via GITOPS.
+Bonne connaissance des normes ISO27001, ISO23247, ISO27002, ISO27005, ISO27701, ISO22301, NIS2.
+
+FinOps:
+Mise en œuvre de la méthode FinOps.
+
+Automatisation | DevSecOps:
+Méthodologie GitOps pour le programme Digital Twin.
+Conception et définition de la stratégie pour Mulesoft dans le cadre du tissu RTF, déploiement et gestion des applications.
+Gestion des fournisseurs externes et rôle de conseiller de confiance.
+Promotion de la prise de décision basée sur les métriques.
+Plan de continuité d’activité et de reprise après sinistre.
+Standardisation et maintenabilité de la plateforme globale.
+
+Professionnel IT avec une excellente expérience en DevOps et pratiques Agile.
+Individu proactif et confiant avec d’excellentes compétences techniques, de communication et de résolution de problèmes.
+Expérience sur des technologies variées avec de solides connaissances en programmation.`,
     },
     {
       title: 'Expérience',

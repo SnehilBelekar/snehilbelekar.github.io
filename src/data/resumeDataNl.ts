@@ -14,24 +14,30 @@ const resumeData: ResumeData = {
     {
       title: 'Samenvatting',
       type: 'text',
-      content: `
-      Ontwerp, definitie en evolutiestrategie voor het Digital Twin-programma.
-      Leiding over AWS landing zone richting een multi-cloudstrategie.
-      Leiding over AZURE landing zone richting een multi-cloudstrategie.
-      Implementatie van governance- en compliancekader geïntegreerd in het ecosysteem zodat beveiliging hiervan profiteert.
-      Implementatie van beveiligingscontroles in operationele processen via GITOPS.
-      Goed bekend met ISO27001, ISO23247, ISO27002, ISO27005, ISO27701, ISO22301, NIS2.
-      Implementatie van FinOps-werkwijze.
-      GitOps-werkwijze voor het Digital Twin-programma.
-      Ontwerp en strategie voor Mulesoft als onderdeel van RTF-fabric en het uitrollen en beheren van applicaties.
-      Beheer van externe leveranciers en optreden als Trusted Advisor.
-      Stimuleren van metriek-gebaseerde besluitvorming.
-      Business continuity en disaster recovery plan.
-      Standaardisatie en onderhoudbaarheid van het gehele platform.
-      IT-professional met uitstekende ervaring in DevOps en Agile praktijken.
-      Proactief en zelfverzekerd met uitstekende technische, communicatieve en probleemoplossende vaardigheden.
-      Ervaring met diverse technologieën en een goede mix van programmeerkennis.
-      `,
+      content: `Technologie:
+Ontwerp, definitie en evolutiestrategie voor het Digital Twin-programma.
+Leiding over AWS landing zone richting een multi-cloudstrategie.
+Leiding over AZURE landing zone richting een multi-cloudstrategie.
+
+Beveiliging:
+Implementatie van governance- en compliancekader geïntegreerd in het ecosysteem zodat beveiliging hiervan profiteert.
+Implementatie van beveiligingscontroles in operationele processen via GITOPS.
+Goed bekend met ISO27001, ISO23247, ISO27002, ISO27005, ISO27701, ISO22301, NIS2.
+
+FinOps:
+Implementatie van FinOps-werkwijze.
+
+Automatisering | DevSecOps:
+GitOps-werkwijze voor het Digital Twin-programma.
+Ontwerp en strategie voor Mulesoft als onderdeel van RTF-fabric en het uitrollen en beheren van applicaties.
+Beheer van externe leveranciers en optreden als Trusted Advisor.
+Stimuleren van metriek-gebaseerde besluitvorming.
+Business continuity en disaster recovery plan.
+Standaardisatie en onderhoudbaarheid van het gehele platform.
+
+IT-professional met uitstekende ervaring in DevOps en Agile praktijken.
+Proactief en zelfverzekerd met uitstekende technische, communicatieve en probleemoplossende vaardigheden.
+Ervaring met diverse technologieën en een goede mix van programmeerkennis.`,
     },
     {
       title: 'Ervaring',
