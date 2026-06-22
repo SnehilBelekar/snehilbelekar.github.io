@@ -109,7 +109,7 @@
 
 
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import resumeDataEN from './data/resumeData';
 import resumeDataFR from './data/resumeDataFr';
 import resumeDataNL from './data/resumeDataNl';
@@ -118,6 +118,10 @@ import HeroSection from './components/HeroSection.vue';
 import CoreSkillsMatrix from './components/CoreSkillsMatrix.vue';
 
 const currentLang = ref('EN');
+
+const META_TITLE = 'Snehil Belekar | Senior Technical Architect';
+const META_DESCRIPTION =
+  'Senior Technical Architect in multi-cloud, DevSecOps, security compliance, FinOps, and digital twin delivery across Azure, AWS, and Kubernetes.';
 
 const resumeData = computed(() => {
   if (currentLang.value === 'FR') return resumeDataFR;
@@ -211,4 +215,54 @@ const printPage = () => {
 
   window.print();
 };
+
+const upsertMetaTag = (attribute: 'name' | 'property', key: string, content: string) => {
+  let meta = document.querySelector<HTMLMetaElement>(`meta[${attribute}="${key}"]`);
+
+  if (!meta) {
+    meta = document.createElement('meta');
+    meta.setAttribute(attribute, key);
+    document.head.appendChild(meta);
+  }
+
+  meta.setAttribute('content', content);
+};
+
+const upsertPersonJsonLd = () => {
+  const person = resumeDataEN.personalInfo;
+  const sameAs = [person.linkedin, person.github].filter((value): value is string => Boolean(value));
+
+  const schema = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    name: person.name,
+    jobTitle: person.title,
+    sameAs,
+  };
+
+  const scriptId = 'person-schema';
+  let script = document.getElementById(scriptId) as HTMLScriptElement | null;
+
+  if (!script) {
+    script = document.createElement('script');
+    script.id = scriptId;
+    script.type = 'application/ld+json';
+    document.head.appendChild(script);
+  }
+
+  script.text = JSON.stringify(schema);
+};
+
+onMounted(() => {
+  document.title = META_TITLE;
+
+  const ogImage = new URL('/profile.jpg', window.location.origin).toString();
+
+  upsertMetaTag('name', 'description', META_DESCRIPTION);
+  upsertMetaTag('property', 'og:title', META_TITLE);
+  upsertMetaTag('property', 'og:description', META_DESCRIPTION);
+  upsertMetaTag('property', 'og:image', ogImage);
+
+  upsertPersonJsonLd();
+});
 </script>
