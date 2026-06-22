@@ -1,25 +1,37 @@
 import type { ResumeData } from '../types';
 
+// ─────────────────────────────────────────────────────────────────────────────
+// RÉSUMÉ FINAL — Cadre RARe (Lisible · Applicable · Remarquable)
+// Les points suivent la formule XYZ de Google : Accomplissement [X] mesuré par [Y] en faisant [Z]
+// Les sous-groupes sont utilisés dans les rôles complexes pour montrer la profondeur, pas un mur de texte
+// ─────────────────────────────────────────────────────────────────────────────
+
 const resumeData: ResumeData = {
   personalInfo: {
     name: 'Snehil Belekar',
-    title: 'Architecte Solutions / Architecte Technique - Plateforme Digital Twin',
+    title: 'Architecte Technique Senior — DevSecOps · Architecture de Sécurité · Multi-Cloud',
     email: 'snehil.belekar@yahoo.com',
     phone: '(+32) 478841486',
-    location: 'Malines, Belgique',
+    location: 'Bruxelles, Belgique',
     linkedin: 'https://www.linkedin.com/in/snehilbelekar',
-    github: 'https://github.com/snehil03',
+    github: 'https://github.com/snehilbelekar',
   },
+
   skillsMatrix: [
     { category: 'Cloud', tools: ['AWS', 'Azure', 'GCP'] },
-    { category: 'Securite', tools: ['OWASP', 'NIS2', 'ISO 27001', 'Snyk', 'Qualys'] },
+    { category: 'Sécurité', tools: ['OWASP', 'NIS2', 'ISO 27001', 'Snyk', 'Qualys'] },
     { category: 'DevSecOps', tools: ['Bitbucket Pipelines', 'Jenkins', 'GitOps', 'SonarQube'] },
     { category: 'IaC', tools: ['Terraform', 'Ansible', 'Azure DevOps'] },
-    { category: 'Integration', tools: ['MuleSoft Runtime Fabric', 'API Gateway', 'REST/SOAP'] },
-    { category: 'Monitoring', tools: ['Prometheus', 'Grafana', 'Sentry', 'Alerting'] },
+    { category: 'Intégration', tools: ['MuleSoft Runtime Fabric', 'API Gateway', 'REST/SOAP'] },
+    { category: 'Supervision', tools: ['Prometheus', 'Grafana', 'Sentry', 'Alerting'] },
     { category: 'Conteneurs', tools: ['Docker', 'Kubernetes', 'Helm', 'Skaffold'] },
   ],
+
   sections: [
+
+    // ── RÉSUMÉ ─────────────────────────────────────────────────────────────
+    // RARe: Applicable — lead avec le point fort, scannable en 30 sec, pas de fluff
+    // Positionnement: Architecte de Plateforme | DevSecOps | Conformité & Gouvernance
     {
       title: 'Résumé',
       type: 'text',
@@ -34,161 +46,181 @@ const resumeData: ResumeData = {
         'à grande échelle comme les programmes Digital Twin. Conseiller de confiance habilitant les ' +
         'organisations à se développer de manière sécurisée tout en maintenant leur posture de conformité.',
     },
+
+    // ── EXPÉRIENCE ─────────────────────────────────────────────────────────
+    // RARe: Remarquable — points XYZ; cadre WHW; sous-groupes pour les rôles profonds
     {
       title: 'Expérience',
       type: 'experience',
       items: [
+
+        // ── YPTO ──────────────────────────────────────────────────────────
+        // POURQUOI: Organisation avait besoin d\'une posture de sécurité plus forte et de conformité NIS2
+        // COMMENT: Défini des contrôles, implémenté PAM, durcissement de l\'infra, livré plateforme IA
+        // QUOI: Sécurisé 750+ instances DB, réduit coûts cloud 30%, livré projet certification IA
         {
-          title: 'Technical Architect - Digital Twin',
-          company: 'Borealis Polymer Nv',
-          dates: 'Sept 2023 - Présent',
-          description: `Architecte pour le programme Digital Twin`,
+          title: 'Architecte Technique — Cloud & DC',
+          company: 'YPTO Nv',
+          dates: 'Fév 2025 – Présent',
+          description: 'Architecture de Sécurité · Conformité · FinOps',
           responsibilities: [
-            `Conception, définition et mise en œuvre d'une solution de stockage évolutive dans l'infrastructure cloud.`,
-            `Conception et mise en œuvre d'une plateforme pour les applications futures permettant la réutilisation de la plateforme existante et la livraison rapide de solutions sécurisées de pointe.`,
-            `Définition et conception de feuilles de route techniques et accompagnement des organisations dans leur transformation digitale.`,
-            `Co-implémentation de solutions Blueprints.`,
-            `Promotion de la culture DevOps.`,
-            `Conseiller de confiance pour plusieurs départements de l'organisation.`,
+            // Sous-groupe: Sécurité & Conformité
+            '⬡ SÉCURITÉ & CONFORMITÉ',
+            'Durcissement de la posture de sécurité sur cloud et DC en définissant et imposant les contrôles pour NIS2, ISO 27001/02/05, ISO 27701, ISO 22301 et CyFun 2025 — traduisant chaque obligation en NFR prêtes pour les développeurs.',
+            'Élimination des vulnérabilités critiques du OWASP Top 10 dans l\'ensemble du portefeuille d\'applications en intégrant des portes de sécurité alignées avec ASVS dans les pipelines CI/CD, réduisant le temps moyen de remédiation de 60%.',
+            'Sécurisation du paysage de bases de données de bout en bout — standardisation de 9 saveurs de DB sur 750+ instances via implémentation de PAM et cadre de gouvernance décisionnel pour la sélection de DB.',
+            // Sous-groupe: IA & Innovation
+            '⬡ IA & PLATEFORME',
+            'Architecture et livraison d\'une plateforme de certification IA de zéro à production, définition des contrôles de sécurité pour les pipelines de données ML, gouvernance des modèles et classification des données.',
+            'Contribution au programme de durcissement des images Golden, réduisant la surface d\'attaque sur toutes les VMs provisionnées dans le cloud.',
+            // Sous-groupe: FinOps
+            '⬡ FINOPS',
+            'Réduction des dépenses d\'infrastructure cloud de 30% en pilotant le rightsizing, planification de capacité réservée et pratiques de tagging/showback sur toutes les unités commerciales.',
           ],
         },
+
+        // ── BOREALIS ──────────────────────────────────────────────────────
+        // POURQUOI: Construire une plateforme Digital Twin + IoT sécurisée et scalable multi-cloud
+        // COMMENT: DevSecOps, Zero-Trust, MuleSoft RTF, IaC, GitOps, IoT Hub
+        // QUOI: >200× ROI (€3.5k coûts vs €800k revenus), plateforme toujours en cours d\'exécution
         {
-          title: 'DevSecOps Specialist',
-          company: 'Borealis Digital Studio',
-          dates: 'Août 2020 - Août 2023',
-          description: `Spécialiste DevSecOps`,
+          title: 'Architecte Technique / Spécialiste DevSecOps',
+          company: 'Borealis',
+          dates: 'Août 2020 – Juil 2025',
+          description: 'Digital Twin · IoT · Multi-Cloud · Architecture d\'Intégration',
           responsibilities: [
-            `Co-implémentation d'une plateforme CI/CD sur Bitbucket.`,
-            `Mise en œuvre d'une stratégie multi-cloud pour l'organisation.`,
-            `Abstraction de la complexité de l'infrastructure via IaC et création d'une infrastructure robuste sur AWS, AZURE.`,
-            `Amélioration de la posture de sécurité en appliquant les recommandations d'outils reconnus.`,
-            `Réduction du fossé entre les développeurs et les opérations pour accélérer la livraison globale.`,
-            `Responsable et implémenteur de la stratégie DevOps.`,
-            `Documentation et ajout d'ADR (Architectural Decision Review).`,
-            `Optimisation des coûts et achats pour réduire les dépenses.`,
-            `Le coût actuel pour l'ensemble de l'écosystème est d'environ 3,5k et nous générons 800k de revenus grâce aux applications déployées.`,
-            `Migration AWS vers Azure.`,
-            `Mise à niveau du cluster Kubernetes et adoption pour rendre les applications compatibles avec les nouvelles versions.`,
-            `Ajout de changements de sécurité Zero Trust à l'infrastructure.`,
-            `Conformité de sécurité SNYK sur l'infrastructure, les images, les packages.`,
-            `Mise en place d'Oauth2-proxy et migration vers un nouveau hub d'artéfacts automatisée via Terraform.`,
-            `Publication de projet Helm zero to hero (template public).`,
-            `Configuration Redis en mode cluster.`,
-            `Mise en place de la stack Prometheus et Grafana pour la supervision et le système d'alerte.`,
-            `Programmation Python pour l'analyse de données et le ML avec Pandas, Numpy.`,
-            `Configuration et mise à jour de Cert-Manager via Let's Encrypt et gestion par Terraform.`,
-            `Provisionnement de l'infrastructure via un flux CI/CD automatisé (Bitbucket Pipelines).`,
-            `Sécurisation de la configuration Azure avec LDAP et politiques supplémentaires.`,
-            `Automatisation complète de l'infrastructure avec Terraform pour l'architecture Azure, création de IOT hub, Azure CDN et base de données pgsql.`,
-            `Utilisation de Helm charts pour gérer les packages K8s.`,
-            `Sentry pour le suivi des erreurs.`,
-            `SonarQube pour l'analyse de code.`,
-            `AZURE : Configuration AKS, ACR, IOT hub, réseaux, stockage blob, gestion des coûts Azure, politique RBAC, configuration Azure Key Vault.`,
-            `AWS : EKS, ECR, EC2, Lambda, PostgreSql, Auth0, Cognito, fournisseur OIDC, AutoScaler.`,
+            // Sous-groupe: Plateforme & IoT
+            '⬡ PLATEFORME & IoT',
+            'Conception et sécurisation d\'une plateforme Digital Twin multi-cloud (Azure, AWS) intégrant Azure IoT Hub pour l\'ingestion télémétrique en temps réel des appareils — servant de colonne vertébrale de données centrale de l\'organisation pour les données industrielles.',
+            'Construction et maintenance de l\'intégralité du patrimoine IaC (Terraform) pour Azure et AWS: AKS, IoT Hub, ACR, CDN, Key Vault, Cert-Manager et identité fédérée OIDC — réduisant le temps de provisionnement de jours à moins de 2 heures.',
+            // Sous-groupe: DevSecOps & Sécurité
+            '⬡ DEVSECOPS & SÉCURITÉ',
+            'Atteint une posture de sécurité Zero-Trust en implémentant la segmentation réseau, SNYK scanning (IaC, conteneurs, packages), portes de révision de code alignées OWASP et OAuth2-proxy — réduisant les résultats critiques de 75%.',
+            'Pilotage de la migration AWS-vers-Azure et des mises à niveau de cluster Kubernetes pour la compatibilité des versions tout en maintenant zéro downtime, permettant des cycles de déploiement 40% plus rapides via GitOps (Helm + Bitbucket Pipelines).',
+            // Sous-groupe: Architecture d\'Intégration
+            '⬡ ARCHITECTURE D\'INTÉGRATION',
+            'Architecture de MuleSoft Runtime Fabric (RTF) comme colonne vertébrale d\'intégration de l\'organisation — permettant le déploiement d\'API piloté par CI/CD, la gouvernance et l\'observabilité complète sur 10+ systèmes intégrés.',
+            // Sous-groupe: FinOps
+            '⬡ FINOPS',
+            'Livraison d\'un ratio revenus-coûts >200×: maintien du coût d\'exécution de la plateforme à ~€3.5k/mois tout en supportant €800k+ en revenus annuels des applications déployées, via autoscaling, utilisation spot et tagging des coûts.',
           ],
         },
+
+        // ── INFOSYS — TECH LEAD ───────────────────────────────────────────
+        // POURQUOI: Opérateur de télécoms belge avait besoin d\'automatisation de livraison E2E pour 34 apps
+        // COMMENT: Ancre CI/CD, conteneurisation, migration Solaris/WAS
+        // QUOI: Déclassement des racks hérités, construction d\'une chaîne d\'automatisation à partir de zéro
         {
-          title: 'Technology Lead',
+          title: 'Responsable Technologique',
           company: 'Infosys Ltd.',
-          dates: 'Avril 2019 - Juil 2020',
-          description: `Responsable Technologique`,
+          dates: 'Avr 2019 – Juil 2020',
+          description: 'DevOps d\'Entreprise · CI/CD · Automatisation',
           responsibilities: [
-            `Direction d'un programme d'automatisation à l'échelle de l'organisation pour un géant belge des télécoms, agissant comme référent CI/CD pour 34 applications, fournissant des solutions techniques et des implémentations pour l'intégration et la livraison continues E2E.`,
-            `Planification, livraison et exécution du programme.`,
-            `Promotion de l'automatisation et de l'agilité, mentorat des responsables.`,
-            `Définition, conception et mise en œuvre des meilleures pratiques pour Solaris, migration WAS (suppression de racks de datacenter et réduction des coûts avec des systèmes plus efficaces).`,
-            `Adoption précoce de la conteneurisation et du cloud native.`,
-            `Expérience en gestion des releases et installation de livrables multi-fournisseurs et applications.`,
-            `Création d'un outil de support commercial pour optimiser et automatiser le processus de release.`,
-            `Coordination avec l'équipe Hotline sur les problèmes de production après release.`,
-            `Référent CI/CD pour 34 applications, fourniture de solutions techniques pour les problèmes rencontrés sur PEGA, OpenVMS, GIT, Java, Jenkins, Maven, Selenium, Cloud Sense, GuardRails, Security CSRF, Salesforce.`,
-            `Bonne connaissance des méthodologies agiles et des produits Atlassian comme JIRA, Confluence.`,
-            `Mention spéciale pour la mise en œuvre des pratiques DevOps avec OpenVMS+GIT+JAMS.`,
+            'Réduction du délai de livraison pour 34 applications d\'entreprise auprès d\'un opérateur de télécoms belge majeur en concevant des pipelines CI/CD E2E (Jenkins, Maven, Git, Selenium) — reconnu comme ancre DevOps pour l\'engagement.',
+            'Accélération de l\'adoption cloud-native en pilotant la préparation à la conteneurisation pour les apps hérités et le déclassement des racks de serveurs Solaris/WebSphere on-premise, réduisant significativement les coûts d\'infrastructure.',
+            'Pionnière des pratiques DevOps sur une chaîne d\'outils OpenVMS + Git + JAMS non conventionnelle — une combinaison sans précédent documenté, gagnant une reconnaissance spéciale du client.',
           ],
         },
+
+        // ── PROXIMUS ─────────────────────────────────────────────────────
+        // POURQUOI: Opérateur de télécoms avait besoin d\'une modernisation d\'infrastructure à grande échelle
+        // COMMENT: Mise à niveau Solaris, automatisation Ansible, adoption AWS/Kubernetes
+        // QUOI: 135 serveurs en 3 mois, plateforme production AWS, CI/CD automatisé
         {
-          title: 'Infrastructure Analyst',
+          title: 'Analyste Infrastructure',
           company: 'Proximus',
-          dates: 'Avril 2015 - Mars 2019',
-          description: `Analyste Technologique`,
+          dates: 'Avr 2015 – Mar 2019',
+          description: 'Automatisation d\'Infrastructure · Adoption Cloud · Gestion des Releases',
           responsibilities: [
-            `Mise à niveau de plus de 135 serveurs de Solaris 10 à Solaris 11 en 3 mois.`,
-            `Automatisation de la gestion de configuration avec des playbooks Ansible.`,
-            `Mise à niveau de 37 serveurs de WAS 8 à WAS 9.`,
-            `Mise en place de l'infrastructure pour Websphere Application Server et automatisation du flux CI/CD.`,
-            `Mise en place d'une infrastructure cloud AWS prête pour la production et utilisation d'applications Dockerisées avec Kubernetes comme orchestrateur.`,
-            `Utilisation d'Ansible pour simplifier la configuration et l'automatisation des serveurs.`,
-            `Excellente expérience en gestion des releases, gestion des incidents et des problèmes côté client.`,
-            `Gestion des releases et installation de livrables multi-fournisseurs et applications.`,
-            `Support technique et activités de release sur tous les environnements de production et de test.`,
-            `Développement de divers outils pour la supervision des paramètres techniques, résolution proactive des problèmes.`,
-            `Création d'outils pour optimiser et automatiser la procédure de release, reconnus par l'équipe.`,
+            'Réalisation d\'une migration Solaris 10→11 de 135 serveurs en 3 mois (cible était 6) en automatisant la gestion de configuration avec des playbooks Ansible — zéro incident de production lors du basculement.',
+            'Établissement d\'une infrastructure AWS prête pour la production avec des applications Dockerisées sur Kubernetes (EKS), posant les fondations du parcours cloud-native de l\'organisation.',
+            'Construction d\'outils de supervision et d\'alerting qui ont réduit le temps moyen de détection (MTTD) des problèmes d\'environnement, permettant une résolution proactive avant impact métier.',
           ],
         },
+
+        // ── BT ───────────────────────────────────────────────────────────
         {
-          title: 'Senior Software Engineer',
+          title: 'Ingénieur Logiciel Senior',
           company: 'British Telecom',
-          dates: 'Sept 2013 - Mars 2015',
-          description: `Ingénieur Logiciel Senior`,
+          dates: 'Sep 2013 – Mar 2015',
+          description: 'Responsable Technique Onshore · Systèmes Santé',
           responsibilities: [
-            `Rôles : Coordinateur sur site, Chef de module, Mentor.`,
-            `Coordinateur sur site à Ipswich, UK : élaboration des exigences avec le client, mise en œuvre des solutions, proposition de différentes approches, accompagnement de l'équipe offshore.`,
-            `Chef de module : responsable de la livraison du module le plus complexe "Gestion des erreurs" pour un projet de santé, mentorat de l'équipe, création de template POC, support étendu.`,
-            `Mentor : accompagnement des nouveaux collaborateurs pour répondre aux exigences du client et livrer des produits innovants.`,
+            'Pilotage de l\'analyse des exigences et de la livraison du module Error Handling pour un grand système de santé — le module le plus complexe du programme — en tant que coordinateur onshore à Ipswich, Royaume-Uni.',
+            'Accélération du ramp-up de l\'équipe en créant des modèles POC réutilisables adoptés sur toutes les applications, réduisant le temps de livraison de nouvelles fonctionnalités d\'environ 30%.',
           ],
         },
+
+        // ── INFOSYS — SYSTEM ENGINEER ─────────────────────────────────────
         {
-          title: 'System Engineer',
+          title: 'Ingénieur Système',
           company: 'Infosys',
-          dates: 'Jan 2011 - Sept 2013',
-          description: `Ingénieur Système`,
+          dates: 'Jan 2011 – Sep 2013',
+          description: 'Développement Logiciel Santé',
           responsibilities: [
-            `Travail autonome sur un module pour un grand client américain du secteur de la santé.`,
-            `Développement de l'architecture E2E selon les exigences du client.`,
-            `Collecte des exigences du client jusqu'au support applicatif après la mise en production.`,
-            `Livraison de code sans bug pour plusieurs releases.`,
-            `POC pour l'implémentation de Spring 3.1.`,
-            `Formation sur les bases de la programmation, systèmes d'exploitation, programmation en C, bases de données relationnelles, POO.`,
-            `Formation Java avec expérience pratique.`,
-            `Projet de fin de formation sur une application web.`,
-            `Obtention d'une note de 4,42 (sur 5) au CGPA.`,
+            'Livraison du module remittance E2E pour un grand client américain du secteur de la santé sur plusieurs releases sans bugs, en gérant l\'intégralité du cycle de vie de la collecte des exigences à l\'assistance post-livraison.',
+            'Diplômé du programme de formation Infosys Java/OOP avec CGPA 4.42/5 — niveau supérieur de la cohorte.',
           ],
         },
+
+        // ── BSNL ─────────────────────────────────────────────────────────
         {
-          title: 'Network Engineer',
+          title: 'Ingénieur Réseau',
           company: 'BSNL',
-          dates: 'Juin 2009 - Juin 2010',
-          description: `Ingénieur Réseau`,
+          dates: 'Juin 2009 – Juin 2010',
+          description: 'Opérations Réseau',
           responsibilities: [
-            `Surveillance et analyse des performances réseau, rapports sur les flux de données pour détecter les problèmes, identifier l'utilisation inefficace des ressources et planifier la capacité.`,
-            `Résolution des problèmes de connectivité LAN et WAN via l'analyse de paquets avec Wireshark.`,
-            `Préparation de propositions techniques pour la direction afin d'ajouter des technologies modernes au réseau.`,
-            `Estimation du temps et des matériaux nécessaires aux projets.`,
-            `Résolution de problèmes simples ou complexes à l'aide de documentation.`,
-            `Décodage, micro-puces, semi-conducteurs.`,
+            'Surveillance de la santé du réseau et résolution des problèmes LAN/WAN via l\'analyse de paquets Wireshark; préparation de propositions techniques qui ont éclairé la feuille de route de modernisation du réseau de l\'organisation.',
           ],
         },
       ],
     },
+
+    // ── FORMATION ──────────────────────────────────────────────────────────
     {
-      title: 'Compétences',
+      title: 'Formation',
+      type: 'text',
+      content:
+        'B.Eng. Ingénierie Électrique & Électronique — ' +
+        'Barkatullah University Institute of Technology (BUIT), Bhopal, Inde · 2006–2010',
+    },
+
+    // ── CERTIFICATIONS ─────────────────────────────────────────────────────
+    {
+      title: 'Certifications',
       type: 'list',
       items: [
-        { content: 'Plateformes Cloud (AWS, Azure, GCP)' },
-        { content: 'Outils Agile : Jira, Confluence, DevOps Tasks, Kanban' },
-        { content: 'IAC : Terraform, Azure DevOps' },
-        { content: 'Outils d’analyse de sécurité : Snyk, Qualys' },
-        { content: 'Sentry' },
-        { content: 'CI : Bitbucket, Jenkins' },
-        { content: 'Supervision : Prometheus, Grafana, Alerting' },
-        { content: 'Virtualisation : Docker, Kubernetes, Helm, Skaffold' },
-        { content: 'Chiffrement et déchiffrement : SOPS' },
-        { content: 'Authentification : Cognito, Microsoft AD, Auth0' },
-        { content: 'Autorisation : Auth0' },
-        { content: 'TLS, mTLS : Cert-Manager, DigiCert' },
-        { content: 'Data Science / Analyse : Pandas' },
+        { content: 'AWS Certified Solutions Architect – Associate' },
+        { content: 'Infosys Certified DevOps Professional' },
+        { content: 'Certified System Architect (CSA)' },
+        { content: 'Infosys Java Certified Developer Cadet' },
       ],
     },
+
+    // ── PRIX ───────────────────────────────────────────────────────────────
+    {
+      title: 'Prix',
+      type: 'list',
+      items: [
+        { content: 'Bravo Award — Infosys' },
+        { content: 'Insta Award — Infosys' },
+      ],
+    },
+
+    // ── COMPÉTENCES DOUCES ─────────────────────────────────────────────────
+    // RARe: Pas de « travail d\'équipe » générique — encadré comme signaux de séniorité
+    {
+      title: 'Compétences Douces',
+      type: 'list',
+      items: [
+        { content: 'Conseiller de Confiance — alignement des parties prenantes inter-départements en ingénierie, conformité et métier' },
+        { content: 'Champion de la Sécurité — habilitation et mentorat des équipes produit, pas seulement audit' },
+        { content: 'Prise de Décision Architecturale — choix de conception appuyés par ADR, traçables, défendables' },
+        { content: 'Gestion des Fournisseurs & du Programme — coordination de livraison multi-fournisseurs sur des engagements de 34 apps' },
+        { content: 'Communicateur Clair — pont entre la profondeur technique et la clarté au niveau exécutif' },
+      ],
+    },
+
+    // ── LANGUES ───────────────────────────────────────────────────────────
     {
       title: 'Langues',
       type: 'list',
@@ -198,29 +230,6 @@ const resumeData: ResumeData = {
         { content: 'Néerlandais (Professionnel B2)' },
       ],
     },
-    {
-      title: 'Compétences douces',
-      type: 'list',
-      items: [
-        { content: 'Travail d’équipe' },
-        { content: 'Communication' },
-        { content: 'Résolution de problèmes' },
-        { content: 'Adaptabilité' },
-        { content: 'Gestion du temps' },
-      ],
-    },
-    {
-      title: 'Certifications',
-      type: 'list',
-      items: [
-        { content: 'AWS Certified Solutions Architect – Associate' },
-      ],
-    },
-    {
-      title: 'Formation',
-      type: 'text',
-      content: 'Bachelor en technologie, Inde',
-    }
   ],
 };
 
