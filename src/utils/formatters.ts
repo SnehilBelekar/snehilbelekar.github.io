@@ -11,8 +11,8 @@ export const formatSummary = (summaryString: string | undefined): string => {
         let currentList: string[] = [];
 
         lines.forEach(line => {
-            // Check if line is a section title (ends with ':')
-            if (line.endsWith(':')) {
+            // Check if line is a section title (ends with ':' or starts with '⬡')
+            if (line.endsWith(':') || line.startsWith('⬡')) {
                 // Close previous list if any
                 if (currentList.length > 0) {
                     html += `<ul>${currentList.map(item => `<li>${item}</li>`).join('')}</ul>`;
