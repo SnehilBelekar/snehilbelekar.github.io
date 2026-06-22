@@ -223,9 +223,9 @@ const resumeData: ResumeData = {
       title: 'Languages',
       type: 'list',
       items: [
-        { content: 'English (Professional)' },
-        { content: 'Nederlands (Conversational)' },
-        { content: 'French (Conversational)' },
+        { content: 'English (Native)' },
+        { content: 'French (Conversational B1)' },
+        { content: 'Dutch (Professional B2)' },
       ],
     },
   ],

@@ -207,9 +207,9 @@ Expérience sur des technologies variées avec de solides connaissances en progr
       title: 'Langues',
       type: 'list',
       items: [
-        { content: 'Anglais (Courant)' },
-        { content: 'Néerlandais (Conversationnel)' },
-        { content: 'Français (Conversationnel)' },
+        { content: 'Anglais (Natif)' },
+        { content: 'Français (Conversationnel B1)' },
+        { content: 'Néerlandais (Professionnel B2)' },
       ],
     },
     {

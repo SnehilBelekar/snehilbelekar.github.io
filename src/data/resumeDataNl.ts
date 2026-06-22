@@ -212,9 +212,9 @@ Ervaring met diverse technologieën en een goede mix van programmeerkennis.`,
       title: 'Talen',
       type: 'list',
       items: [
-        { content: 'Engels (Vloeiend)' },
-        { content: 'Nederlands (Conversatie)' },
-        { content: 'Frans (Conversatie)' },
+        { content: 'Engels (Moedertaal)' },
+        { content: 'Frans (Conversationeel B1)' },
+        { content: 'Nederlands (Professioneel B2)' },
       ],
     },
     {
