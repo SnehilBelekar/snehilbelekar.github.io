@@ -56,7 +56,7 @@ Conseiller de confiance habilitant les organisations à se développer de maniè
           title: 'Architecte Technique — Cloud & DC',
           company: 'YPTO Nv',
           dates: 'Fév 2025 – Présent',
-          description: 'Architecture de Sécurité · Conformité · FinOps',
+          description: 'Transport & Mobilité · Architecture de Sécurité · Conformité · FinOps',
           responsibilities: [
             // Sous-groupe: Sécurité & Conformité
             '⬡ SÉCURITÉ & CONFORMITÉ',
@@ -81,7 +81,7 @@ Conseiller de confiance habilitant les organisations à se développer de maniè
           title: 'Architecte Technique / Spécialiste DevSecOps',
           company: 'Borealis',
           dates: 'Août 2020 – Juil 2025',
-          description: 'Digital Twin · IoT · Multi-Cloud · Architecture d\'Intégration',
+          description: 'Fabrication Chimique · Digital Twin · IoT · Multi-Cloud · Architecture d\'Intégration',
           responsibilities: [
             // Sous-groupe: Plateforme & IoT
             '⬡ PLATEFORME & IoT',
@@ -108,7 +108,7 @@ Conseiller de confiance habilitant les organisations à se développer de maniè
           title: 'Responsable Technologique',
           company: 'Infosys Ltd.',
           dates: 'Avr 2019 – Juil 2020',
-          description: 'DevOps d\'Entreprise · CI/CD · Automatisation',
+          description: 'Télécommunications · DevOps d\'Entreprise · CI/CD · Automatisation',
           responsibilities: [
             'Réduction du délai de livraison pour 34 applications d\'entreprise auprès d\'un opérateur de télécoms belge majeur en concevant des pipelines CI/CD E2E (Jenkins, Maven, Git, Selenium) — reconnu comme ancre DevOps pour l\'engagement.',
             'Accélération de l\'adoption cloud-native en pilotant la préparation à la conteneurisation pour les apps hérités et le déclassement des racks de serveurs Solaris/WebSphere on-premise, réduisant significativement les coûts d\'infrastructure.',
@@ -137,7 +137,7 @@ Conseiller de confiance habilitant les organisations à se développer de maniè
           title: 'Ingénieur Logiciel Senior',
           company: 'British Telecom',
           dates: 'Sep 2013 – Mar 2015',
-          description: 'Responsable Technique Onshore · Systèmes Santé',
+          description: 'Télécommunications · Responsable Technique Onshore · Développement Java',
           responsibilities: [
             'Pilotage de l\'analyse des exigences et de la livraison du module Error Handling pour un grand système de santé — le module le plus complexe du programme — en tant que coordinateur onshore à Ipswich, Royaume-Uni.',
             'Accélération du ramp-up de l\'équipe en créant des modèles POC réutilisables adoptés sur toutes les applications, réduisant le temps de livraison de nouvelles fonctionnalités d\'environ 30%.',

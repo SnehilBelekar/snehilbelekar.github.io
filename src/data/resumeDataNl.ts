@@ -56,7 +56,7 @@ Vertrouwde adviseur die organisaties in staat stelt veilig op schaal te groeien 
           title: 'Technisch Architect — Cloud & DC',
           company: 'YPTO Nv',
           dates: 'Feb 2025 – Heden',
-          description: 'Security Architecture · Compliance · FinOps',
+          description: 'Mobiliteitstransport · Beveiligingsarchitectuur · Compliance · FinOps',
           responsibilities: [
             // Sub-group: Security & Compliance
             '⬡ BEVEILIGING & COMPLIANCE',
@@ -81,7 +81,7 @@ Vertrouwde adviseur die organisaties in staat stelt veilig op schaal te groeien 
           title: 'Technisch Architect / DevSecOps Specialist',
           company: 'Borealis',
           dates: 'Aug 2020 – Jul 2025',
-          description: 'Digital Twin · IoT · Multi-Cloud · Integration Architecture',
+          description: 'Chemische Industrie · Digital Twin · IoT · Multi-Cloud · Integratiearchitectuur',
           responsibilities: [
             // Sub-group: Platform & IoT
             '⬡ PLATFORM & IoT',
@@ -108,7 +108,7 @@ Vertrouwde adviseur die organisaties in staat stelt veilig op schaal te groeien 
           title: 'Technology Lead',
           company: 'Infosys Ltd.',
           dates: 'Apr 2019 – Jul 2020',
-          description: 'Enterprise DevOps · CI/CD · Automation',
+          description: 'Telecommunicatie · Enterprise DevOps · CI/CD · Automatisering',
           responsibilities: [
             'Verminderde release lead time voor 34 enterprise applicaties bij majorbelgische telco door E2E CI/CD pijplijnen (Jenkins, Maven, Git, Selenium) te ontwerpen — erkend als DevOps anker voor de engagement.',
             'Versnelde cloud-native adoptie door containerisatie readiness voor legacy apps te leiden en on-premise Solaris/WebSphere server racks te decommissionen, infrastructure kosten significant verlaagd.',
@@ -137,7 +137,7 @@ Vertrouwde adviseur die organisaties in staat stelt veilig op schaal te groeien 
           title: 'Senior Software Engineer',
           company: 'British Telecom',
           dates: 'Sep 2013 – Mar 2015',
-          description: 'Onshore Tech Lead · Healthcare Systems',
+          description: 'Telecommunicatie · Onshore Tech Lead · Java-ontwikkeling',
           responsibilities: [
             'Requirement analyse en levering van Error Handling module voor groot healthcare systeem geleid — meest complexe module in programma — als onshore coordinator in Ipswich, Verenigd Koninkrijk.',
             'Team ramp-up versneld door reusable POC templates te creëren aangenomen over alle applicaties, nieuwe feature delivery tijd naar schatting met 30% verkort.',
