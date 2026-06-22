@@ -8,9 +8,9 @@
         <li style="margin-left: auto; display: flex; align-items: center;">
           <!-- Language Switcher -->
           <select v-model="currentLang" class="lang-switcher" @change="changeLang" style="margin-right: 10px;" aria-label="Language selection">
-            <option value="FR">FR : French 🇫🇷</option>
-            <option value="NL">NL : Dutch 🇳🇱</option>
-            <option value="EN">EN : English 🇬🇧</option>
+            <option value="FR">French 🇫🇷</option>
+            <option value="NL">Dutch 🇳🇱</option>
+            <option value="EN">English 🇬🇧</option>
           </select>
         </li>     
       </ul>
