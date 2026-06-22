@@ -35,10 +35,10 @@ const resumeData: ResumeData = {
     {
       title: 'Summary',
       type: 'text',
-      content: `Strategic, security-focused Platform Architect with 15+ years designing multi-cloud enterprise landing zones and driving secure-by-design principles across complex SDLC.
-Proven expertise translating regulatory mandates—NIS2, ISO 27001/02/05, ISO 27701, ISO 22301—into actionable technical controls and automated architecture guardrails.
-Recognized for leading DevSecOps transformations, embedding security natively into CI/CD and GitOps workflows, and advancing metrics-driven governance for large-scale initiatives like Digital Twin programs.
-Trusted advisor enabling organizations to scale securely while maintaining compliance posture.`,
+      content: `• Strategic, security-focused Platform Architect with 15+ years designing multi-cloud enterprise landing zones and driving secure-by-design principles across complex SDLC.
+• Proven expertise translating regulatory mandates—NIS2, ISO 27001/02/05, ISO 27701, ISO 22301—into actionable technical controls and automated architecture guardrails.
+• Recognized for leading DevSecOps transformations, embedding security natively into CI/CD and GitOps workflows, and advancing metrics-driven governance for large-scale initiatives like Digital Twin programs.
+• Trusted advisor enabling organizations to scale securely while maintaining compliance posture.`,
     },
 
     // ── EXPERIENCE ─────────────────────────────────────────────────────────
