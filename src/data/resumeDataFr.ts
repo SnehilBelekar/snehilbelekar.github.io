@@ -35,7 +35,10 @@ const resumeData: ResumeData = {
     {
       title: 'Résumé',
       type: 'text',
-      content: `Architecte de plateforme stratégique et axé sur la sécurité, avec 15+ ans d'expérience dans la conception de zones d'atterrissage cloud multi-clouds et l'application de principes de sécurité par conception (secure-by-design) dans les SDLC complexes. Expertise reconnue en traduction des mandats réglementaires—NIS2, ISO 27001/02/05, ISO 27701, ISO 22301—en contrôles techniques actionnables et garde-fous d'architecture automatisés. Reconnu pour avoir mené des transformations DevSecOps, intégré la sécurité nativement dans les pipelines CI/CD et workflows GitOps, et promu une gouvernance basée sur les métriques pour des initiatives à grande échelle comme les programmes Digital Twin. Conseiller de confiance habilitant les organisations à se développer de manière sécurisée tout en maintenant leur posture de conformité.`,
+      content: `Architecte technique stratégique et axé sur la sécurité, avec 15+ ans d'expérience dans la conception de zones d'atterrissage cloud multi-clouds et l'application de principes de sécurité par conception (secure-by-design) dans les SDLC complexes.
+Expertise reconnue en traduction des mandats réglementaires—NIS2, ISO 27001/02/05, ISO 27701, ISO 22301—en contrôles techniques actionnables et garde-fous d'architecture automatisés.
+Reconnu pour avoir mené des transformations DevSecOps, intégré la sécurité nativement dans les pipelines CI/CD et workflows GitOps, et promu une gouvernance basée sur les métriques pour des initiatives à grande échelle comme les programmes Digital Twin.
+Conseiller de confiance habilitant les organisations à se développer de manière sécurisée tout en maintenant leur posture de conformité.`,
     },
 
     // ── EXPÉRIENCE ─────────────────────────────────────────────────────────
