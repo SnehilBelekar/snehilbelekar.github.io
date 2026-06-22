@@ -12,10 +12,6 @@
             <option value="FR">FR</option>
             <option value="NL">NL</option>
           </select>
-          <!-- Print Button -->
-          <button class="print-btn" @click="printPage" title="Print Resume">
-            🖨️ 
-          </button>
         </li>     
       </ul>
     </nav>
@@ -23,31 +19,16 @@
       <HeroSection
         :cv-url="currentResumePdf"
         :linkedin-url="resumeData.personalInfo.linkedin || ''"
+        :github-url="resumeData.personalInfo.github || ''"
+        :email="resumeData.personalInfo.email || ''"
+        :phone="resumeData.personalInfo.phone || ''"
+        :location="resumeData.personalInfo.location || ''"
+        profile-image="/profile.jpg"
       />
       <CoreSkillsMatrix
         v-if="currentSkillsMatrix.length"
         :skills-matrix="currentSkillsMatrix"
       />
-      <header class="header-container">
-        <div class="header-content">
-          <div class="image-container">
-            <img src="/profile.jpg" alt="Profile Picture" class="profile-image" />
-          </div>
-          <div class="personal-details">
-            <h1>{{ resumeData.personalInfo.name }}</h1>
-            <h2>{{ resumeData.personalInfo.title }}</h2>
-            <div class="contacts">
-              <p v-if="resumeData.personalInfo.email">Email: {{ resumeData.personalInfo.email }}</p>
-              <p v-if="resumeData.personalInfo.phone">Phone: {{ resumeData.personalInfo.phone }}</p>
-              <p v-if="resumeData.personalInfo.location">Location: {{ resumeData.personalInfo.location }}</p>
-              <div class="social">
-                <a v-if="resumeData.personalInfo.linkedin" :href="resumeData.personalInfo.linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a v-if="resumeData.personalInfo.github" :href="resumeData.personalInfo.github" target="_blank" rel="noopener noreferrer">GitHub</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
       <!-- Summary Section Below Header -->
       <section class="summary-section" v-if="summarySection">
         <Section :section="summarySection" />
@@ -192,29 +173,6 @@ const scrollToSection = (sectionTitle: string) => {
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     element.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
   }
-};
-
-const printPage = () => {
-  const resumePdfByLang: Record<string, string> = {
-    EN: EN_RESUME_PDF_PATH,
-    FR: FR_RESUME_PDF_PATH,
-    NL: NL_RESUME_PDF_PATH,
-  };
-
-  const selectedResumePdf = resumePdfByLang[currentLang.value];
-
-  if (selectedResumePdf) {
-    const pdfWindow = window.open(selectedResumePdf, '_blank', 'noopener,noreferrer');
-
-    // Fallback if popups are blocked by the browser.
-    if (!pdfWindow) {
-      window.location.href = selectedResumePdf;
-    }
-
-    return;
-  }
-
-  window.print();
 };
 
 const upsertMetaTag = (attribute: 'name' | 'property', key: string, content: string) => {

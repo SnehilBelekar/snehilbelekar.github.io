@@ -27,32 +27,49 @@
       </svg>
     </div>
 
-    <div class="hero__content">
-      <h1 id="hero-name" class="hero__name">
-        <span class="hero__first">Snehil</span>
-        <span class="hero__last">Belekar</span>
-      </h1>
+    <div class="hero__layout">
+      <div class="hero__photo-wrap">
+        <img :src="profileImage" alt="Snehil Belekar profile photo" class="hero__photo">
+      </div>
 
-      <p class="hero__headline">
-        Senior Technical Architect — DevSecOps · Security Architecture · Multi-Cloud ·
-        IoT · FinOps
-      </p>
+      <div class="hero__content">
+        <h1 id="hero-name" class="hero__name">
+          <span class="hero__first">Snehil</span>
+          <span class="hero__last">Belekar</span>
+        </h1>
 
-      <p class="hero__subline">
-        Turning compliance obligations (NIS2 · ISO 27001 · OWASP) into engineering-ready
-        controls across Azure, AWS &amp; Kubernetes
-      </p>
+        <p class="hero__headline">
+          Senior Technical Architect — DevSecOps · Security Architecture · Multi-Cloud ·
+          IoT · FinOps
+        </p>
 
-      <div class="hero__accent" aria-hidden="true"></div>
+        <p class="hero__subline">
+          Turning compliance obligations (NIS2 · ISO 27001 · OWASP) into engineering-ready
+          controls across Azure, AWS &amp; Kubernetes
+        </p>
 
-      <nav class="hero__actions" aria-label="Primary actions">
-        <a :href="cvUrl" target="_blank" rel="noopener noreferrer">
-          Download CV (PDF)
-        </a>
-        <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer" class="hero__secondary">
-          View on LinkedIn
-        </a>
-      </nav>
+        <div class="hero__accent" aria-hidden="true"></div>
+
+        <nav class="hero__actions" aria-label="Primary actions">
+          <a :href="cvUrl" target="_blank" rel="noopener noreferrer">
+            Download CV (PDF)
+          </a>
+          <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer" class="hero__secondary">
+            View on LinkedIn
+          </a>
+        </nav>
+
+        <div class="hero__meta" aria-label="Contact information">
+          <a v-if="email" :href="`mailto:${email}`">Email: {{ email }}</a>
+          <a v-if="phone" :href="`tel:${phone.replace(/\s+/g, '')}`">Phone: {{ phone }}</a>
+          <span v-if="location">Location: {{ location }}</span>
+        </div>
+
+        <div class="hero__social" aria-label="Social links">
+          <a v-if="linkedinUrl" :href="linkedinUrl" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a v-if="githubUrl" :href="githubUrl" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
     </div>
   </header>
 </template>
@@ -61,5 +78,10 @@
 defineProps<{
   cvUrl: string;
   linkedinUrl: string;
+  githubUrl: string;
+  email: string;
+  phone: string;
+  location: string;
+  profileImage: string;
 }>();
 </script>
