@@ -16,19 +16,23 @@
 .hero {
   position: relative;
   overflow: hidden;
+  overflow-x: clip;
   background: var(--hero-bg);
   color: var(--hero-text);
-  min-width: 360px;
+  width: 100%;
+  min-width: 0;
   padding: 1.2rem 1.05rem 1.5rem;
   isolation: isolate;
+  box-sizing: border-box;
 }
 
 .hero__mesh {
   position: absolute;
-  inset: -12% -8%;
+  inset: 0;
   opacity: 0.22;
   pointer-events: none;
   z-index: -1;
+  overflow: hidden;
 }
 
 .hero__mesh svg {
@@ -80,6 +84,7 @@
   line-height: 1.36;
   color: var(--hero-text);
   text-wrap: pretty;
+  overflow-wrap: anywhere;
 }
 
 .hero__subline {
@@ -90,6 +95,7 @@
   line-height: 1.52;
   color: var(--hero-text);
   max-width: 64ch;
+  overflow-wrap: anywhere;
 }
 
 .hero__accent {

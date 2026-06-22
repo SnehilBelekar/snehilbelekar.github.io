@@ -7,7 +7,7 @@
         </li>
         <li style="margin-left: auto; display: flex; align-items: center;">
           <!-- Language Switcher -->
-          <select v-model="currentLang" class="lang-switcher" @change="changeLang" style="margin-right: 10px;">
+          <select v-model="currentLang" class="lang-switcher" @change="changeLang" style="margin-right: 10px;" aria-label="Language selection">
             <option value="EN">EN</option>
             <option value="FR">FR</option>
             <option value="NL">NL</option>
@@ -189,7 +189,8 @@ const scrollToSection = (sectionTitle: string) => {
   const id = sectionTitle.toLowerCase().replace(/\s+/g, '-');
   const element = document.getElementById(id);
   if (element) {
-    element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    element.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
   }
 };
 

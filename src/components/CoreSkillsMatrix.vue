@@ -76,6 +76,7 @@ defineProps<{
 .core-skills__table tbody td {
   width: 66%;
   color: rgba(255, 255, 255, 0.92);
+  overflow-wrap: anywhere;
 }
 
 .sr-only {

@@ -1,7 +1,7 @@
 <template>
   <header class="hero" aria-labelledby="hero-name">
     <div class="hero__mesh" aria-hidden="true">
-      <svg viewBox="0 0 1200 600" role="presentation" focusable="false">
+      <svg viewBox="0 0 1200 600" preserveAspectRatio="none" role="presentation" focusable="false">
         <g>
           <path d="M80 430 L240 320 L420 360 L610 250 L780 300 L930 210 L1110 280" />
           <path d="M140 180 L320 140 L490 230 L680 170 L860 250 L1040 190" />

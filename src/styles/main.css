@@ -128,34 +128,7 @@ section h2 {
   margin-bottom: 1em;
 }
 
-nav {
-position: sticky; /* Make the nav stick to the top */
-top: 0;
-background-color: #f8f8f8; /* Or any background color */
-padding: 10px;
-z-index: 100; /* Ensure it's above other content */
-border-bottom: 1px solid #ddd;
-}
-
-nav ul {
-list-style: none; /* Remove bullet points */
-padding: 0;
-margin: 0;
-display: flex; /* Arrange links horizontally */
-justify-content: center; /* Center the links */
-}
-
-nav li {
-margin: 0 10px; /* Add some spacing between links */
-}
-
-nav a {
-text-decoration: none; /* Remove underlines from links */
-color: #333; /* Or any link color */
-}
-
-/* Add hover effect */
-nav a:hover {
+.sticky-nav a:hover {
   color: #007bff; /* Example hover color */
 }
 
@@ -198,6 +171,8 @@ padding: 20px; /* Add some padding around the content */
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   color: cadetblue;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .header-content {
@@ -206,13 +181,17 @@ flex-wrap: wrap; /* Allow wrapping on smaller screens */
 gap: 20px; /* Gap between image and content */
 align-items: left; /* Vertically center content */
 color: cadetblue;
+max-width: 100%;
+box-sizing: border-box;
 }
 
 .image-container {
 height: 350px;
+width: min(100%, 280px);
 overflow: hidden;
 border: 3px solid white; /* White border for contrast */
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+box-sizing: border-box;
 }
 
 .profile-image {
@@ -272,6 +251,8 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   padding: 16px 24px;
   background: #f9f9f9;
   border-radius: 8px;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* ====== Panel Layout Styles ====== */
@@ -281,6 +262,8 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: row;
   margin-top: 20px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* Left panel styles */
@@ -290,6 +273,8 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   padding: 1rem;
   background-color: #f4f4f4;
   border-right: 1px solid #ddd;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 .left-panel h3 {
@@ -318,6 +303,8 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 .right-panel {
   width: 78%;
   padding: 1rem;
+  box-sizing: border-box;
+  max-width: 100%;
 }
 
 /* Sticky nav styles */
@@ -339,6 +326,7 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   margin: 0;
   padding: 0 2rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .sticky-nav li {
@@ -359,6 +347,16 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 .sticky-nav a:hover {
   color: #0077b6;
   text-decoration: underline;
+}
+
+.sticky-nav a:focus-visible,
+.print-btn:focus-visible,
+.lang-switcher:focus-visible,
+.social a:focus-visible,
+.left-panel h2 a:focus-visible {
+  outline: 2px solid #2b2d42;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(0, 170, 170, 0.55);
 }
 
 /* Print Button Style */
@@ -427,11 +425,13 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     flex-direction: column;
     gap: 0.5rem;
     padding: 0 0.5rem;
+    box-sizing: border-box;
   }
   .sticky-nav li {
     width: 100%;
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 0;
+    box-sizing: border-box;
   }
   .sticky-nav a {
     font-size: 1rem;
@@ -475,6 +475,7 @@ text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 body {
   background: #e9e6df;
   color: #1f2933;
+  margin: 0;
 }
 
 #app {
@@ -490,6 +491,8 @@ body {
   background: #ffffff;
   border: 1px solid #d8d3c8;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
+  width: min(100%, 980px);
 }
 
 .header-container {
@@ -532,5 +535,30 @@ body {
     border-left: none;
     border-right: none;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@media (max-width: 420px) {
+  #app {
+    padding: 0.35rem 0 0.75rem;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+
+  .header-container {
+    padding: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
