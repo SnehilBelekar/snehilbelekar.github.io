@@ -152,7 +152,7 @@ const rightPanelSections = computed(() =>
   resumeData.value.sections.filter(
     section =>
       ![
-        'Skills', 'Core Expertise', 'Languages', 'Soft Skills', 'Certifications', 'Education', 'Summary',
+        'Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education', 'Summary',
         'Compétences', 'Langues', 'Compétences douces', 'Certifications', 'Formation', 'Résumé',
         'Vaardigheden', 'Talen', 'Soft Skills', 'Certificeringen', 'Opleiding', 'Samenvatting'
       ].includes(section.title)

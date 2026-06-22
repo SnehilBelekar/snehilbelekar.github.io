@@ -173,26 +173,6 @@ const resumeData: ResumeData = {
       ],
     },
 
-    // ── SKILLS ─────────────────────────────────────────────────────────────
-    // RARe: Applicable — tool-heavy role so skills appear before Education
-    // Sub-grouped by domain — each group heading is an ATS keyword itself
-    {
-      title: 'Core Expertise',
-      type: 'list',
-      items: [
-        { content: 'Security Architecture: Zero Trust · IAM/RBAC/OIDC · PAM · Key Vault · OWASP Top 10 · ASVS · NIS2 · CyFun 2025 · ISO 27001/02/05/01/22301' },
-        { content: 'DevSecOps: SNYK · SonarQube · Secure SDLC · GitOps · SOPS · Bitbucket Pipelines · Jenkins' },
-        { content: 'Multi-Cloud & IaC: Azure (AKS · IoT Hub · Key Vault · ACR · CDN) · AWS (EKS · Lambda · Cognito · ECR) · Terraform · Ansible · Helm' },
-        { content: 'Integration Architecture: MuleSoft Runtime Fabric · API Gateway · REST/SOAP · Event-Driven Design · CI/CD-driven API deployment' },
-        { content: 'IoT & Digital Twin: Azure IoT Hub · Device Management · Real-Time Telemetry Pipelines · Industrial Data Platforms' },
-        { content: 'AI/ML Delivery: AI Platform Architecture · ML Pipeline Security · Data Governance · Model Lifecycle Controls' },
-        { content: 'FinOps: Rightsizing · Reserved Capacity Planning · Tagging & Showback · Autoscaling · Spot/Preemptible Instances' },
-        { content: 'Containers & Observability: Kubernetes · Docker · Cert-Manager · TLS/mTLS · Prometheus · Grafana · Sentry · Alerting' },
-        { content: 'Identity & Auth: Cognito · Microsoft AD · Auth0 · DigiCert · OIDC Federation' },
-        { content: 'Agile & Governance: JIRA · Confluence · ADR Authoring · Kanban · Multi-vendor coordination' },
-      ],
-    },
-
     // ── EDUCATION ──────────────────────────────────────────────────────────
     {
       title: 'Education',
@@ -211,18 +191,6 @@ const resumeData: ResumeData = {
         { content: 'Infosys Certified DevOps Professional' },
         { content: 'Certified System Architect (CSA)' },
         { content: 'Infosys Java Certified Developer Cadet' },
-      ],
-    },
-
-    // ── PUBLICATIONS ───────────────────────────────────────────────────────
-    {
-      title: 'Publications',
-      type: 'list',
-      items: [
-        { content: 'User Guide for Solaris 10 to Solaris 11 Migration' },
-        { content: 'Reusable Components of the Spring Framework' },
-        { content: 'Overall Performance Increase of a Website using HTML & CSS' },
-        { content: "Let's Start with Spring 3.1" },
       ],
     },
 
