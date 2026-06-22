@@ -18,8 +18,8 @@ export const formatSummary = (summaryString: string | undefined): string => {
                     html += `<ul>${currentList.map(item => `<li>${item}</li>`).join('')}</ul>`;
                     currentList = [];
                 }
-                // Add section title as a heading
-                html += `<h3>${line}</h3>`;
+                // Add section title as a sub-heading for clearer hierarchy
+                html += `<h4>${line}</h4>`;
             } else {
                 // Add to current list
                 currentList.push(line);
