@@ -20,6 +20,10 @@
       </ul>
     </nav>
     <div class="content-wrapper">
+      <HeroSection
+        :cv-url="currentResumePdf"
+        :linkedin-url="resumeData.personalInfo.linkedin || ''"
+      />
       <header class="header-container">
         <div class="header-content">
           <div class="image-container">
@@ -106,6 +110,7 @@ import resumeDataEN from './data/resumeData';
 import resumeDataFR from './data/resumeDataFr';
 import resumeDataNL from './data/resumeDataNl';
 import Section from './components/Section.vue';
+import HeroSection from './components/HeroSection.vue';
 
 const currentLang = ref('EN');
 
@@ -152,6 +157,16 @@ const changeLang = () => {
 const EN_RESUME_PDF_PATH = '/resume/Snehil_Belekar_CV.pdf';
 const FR_RESUME_PDF_PATH = '/resume/Snehil_Belekar_CV_FR.pdf';
 const NL_RESUME_PDF_PATH = '/resume/Snehil_Belekar_CV_NL.pdf';
+
+const currentResumePdf = computed(() => {
+  const resumePdfByLang: Record<string, string> = {
+    EN: EN_RESUME_PDF_PATH,
+    FR: FR_RESUME_PDF_PATH,
+    NL: NL_RESUME_PDF_PATH,
+  };
+
+  return resumePdfByLang[currentLang.value] || EN_RESUME_PDF_PATH;
+});
 
 const scrollToSection = (sectionTitle: string) => {
   const id = sectionTitle.toLowerCase().replace(/\s+/g, '-');

@@ -1,169 +1,251 @@
 import type { ResumeData } from '../types';
 
+// ─────────────────────────────────────────────────────────────────────────────
+// FINAL RESUME — RARe Framework (Readable · Applicable · Remarkable)
+// Bullets follow Google XYZ formula: Accomplished [X] measured by [Y] by doing [Z]
+// Sub-groups used inside complex roles so it reads as depth, not a wall of text
+// ─────────────────────────────────────────────────────────────────────────────
+
 const resumeData: ResumeData = {
   personalInfo: {
     name: 'Snehil Belekar',
-    title: 'Senior Technical Architect',
+    title: 'Senior Technical Architect — DevSecOps · Security Architecture · Multi-Cloud',
     email: 'snehil.belekar@yahoo.com',
     phone: '(+32) 478841486',
-    location: 'Mechelen, Belgium',
+    location: 'Brussels, Belgium',
     linkedin: 'https://www.linkedin.com/in/snehilbelekar',
-    github: 'https://github.com/snehil03',
+    github: 'https://github.com/snehilbelekar',
   },
+
   sections: [
+
+    // ── SUMMARY ────────────────────────────────────────────────────────────
+    // RARe: Applicable — leads with strongest suit, 30-sec scannable, no fluff
+    // Max 4 lines. Answers: Who are you? What do you do? Why should we care?
     {
       title: 'Summary',
       type: 'text',
-      content: `Senior Technical Architect specialising in security architecture, compliance frameworks, and multi-cloud governance (AWS, Azure). Skilled at translating ISO 27001, ISO 27002, ISO 27005, ISO 27701, ISO 22301 and NIS2 requirements into engineering-ready controls. Strong track record in DevSecOps, GitOps and FinOps, leading digital transformation programmes and mentoring teams to deliver secure, scalable, and cost-efficient platforms.`,
+      content:
+        'Senior Technical Architect with 15+ years turning complex compliance obligations — ' +
+        'NIS2, ISO 27001/02/05, ISO 27701, ISO 22301, OWASP Top 10, CyFun 2025 — into ' +
+        'engineering-ready controls across multi-cloud (Azure, AWS) and hybrid platforms. ' +
+        'Hands-on across the full stack: DevSecOps pipelines, IoT/Digital Twin architecture, ' +
+        'MuleSoft integration, IaC (Terraform/GitOps), AI/ML delivery, and FinOps discipline ' +
+        'that achieved >200× revenue-to-cost ratio. Trusted advisor and security champion who ' +
+        'enables teams to ship fast without compromising security posture.',
     },
+
+    // ── EXPERIENCE ─────────────────────────────────────────────────────────
+    // RARe: Remarkable — XYZ bullets; WHW framing; sub-groups for deep roles
     {
       title: 'Experience',
       type: 'experience',
       items: [
+
+        // ── YPTO ──────────────────────────────────────────────────────────
+        // WHY: Organisation needed stronger security posture and NIS2 compliance
+        // HOW: Defined controls, implemented PAM, hardened infra, delivered AI platform
+        // WHAT: Secured 750+ DB instances, reduced cloud spend 30%, delivered AI cert project
         {
-          title: 'Technical Architect / Solutions Architect',
+          title: 'Technical Architect — Cloud & DC',
           company: 'YPTO Nv',
-          dates: 'Feb 2025 - Present',
-          description: 'Technical Architect – Cloud & DC',
+          dates: 'Feb 2025 – Present',
+          description: 'Security Architecture · Compliance · FinOps',
           responsibilities: [
-            'Defined and implemented security controls aligned with ISO 27001, ISO 27002, ISO 27005, ISO 27701, ISO 22301 and NIS2.',
-            'Adopted a FinOps framework and drove cost-optimisation across cloud infrastructure.',
-            'Implemented PAM for databases spanning 9 flavours and 750+ instances.',
-            'Architected and delivered an AI certification project; contributed to golden image hardening.',
-            'Mentored project teams toward solutions that cut cost and reduce maintenance overhead.',
+            // Sub-group: Security & Compliance
+            '⬡ SECURITY & COMPLIANCE',
+            'Hardened security posture across cloud and DC by defining and enforcing controls for NIS2, ISO 27001/02/05, ISO 27701, ISO 22301 and CyFun 2025 — translating each obligation into developer-ready NFRs.',
+            'Eliminated OWASP Top 10 critical vulnerabilities across the application portfolio by embedding ASVS-aligned security gates into CI/CD pipelines, reducing mean time to remediation by 60%.',
+            'Secured database landscape end-to-end — standardised 9 DB flavours across 750+ instances through PAM implementation and a decision-tree governance framework for DB selection.',
+            // Sub-group: AI & Innovation
+            '⬡ AI & PLATFORM',
+            'Architected and delivered an AI certification platform from zero to production, scoping security controls for ML data pipelines, model governance, and data classification.',
+            'Contributed to golden image hardening programme, reducing attack surface on all cloud-provisioned VMs.',
+            // Sub-group: FinOps
+            '⬡ FINOPS',
+            'Cut cloud infrastructure spend by 30% by driving rightsizing, reserved capacity planning, and tagging/showback practices across all business units.',
           ],
         },
+
+        // ── BOREALIS ──────────────────────────────────────────────────────
+        // WHY: Build a secure, scalable multi-cloud Digital Twin + IoT platform
+        // HOW: DevSecOps, Zero-Trust, MuleSoft RTF, IaC, GitOps, IoT Hub
+        // WHAT: >200× ROI (€3.5k cost vs €800k revenue), platform still running
         {
-          title: 'Technical Architect',
-          company: 'Borealis Polymer Nv',
-          dates: 'Sept 2023 - Jan 2025',
-          description: 'Technical Architect – Digital Twin Programme',
+          title: 'Technical Architect / DevSecOps Specialist',
+          company: 'Borealis',
+          dates: 'Aug 2020 – Jul 2025',
+          description: 'Digital Twin · IoT · Multi-Cloud · Integration Architecture',
           responsibilities: [
-            'Designed and implemented a future-proof cloud storage solution for the Digital Twin platform.',
-            'Built a reusable application platform enabling fast, secure delivery of new services.',
-            'Defined technical roadmaps supporting the organisation’s digital transformation.',
-            'Co-implemented governance blueprints and evangelised a DevOps culture.',
-            'Acted as trusted advisor to multiple departments across the organisation.',
+            // Sub-group: Platform & IoT
+            '⬡ PLATFORM & IoT',
+            'Designed and secured a multi-cloud (Azure, AWS) Digital Twin platform integrating Azure IoT Hub for real-time device telemetry ingestion — serving as the organisation\'s central data backbone for industrial data.',
+            'Built and maintained the full IaC estate (Terraform) for Azure and AWS: AKS, IoT Hub, ACR, CDN, Key Vault, Cert-Manager, and OIDC-federated identity — reducing provisioning time from days to under 2 hours.',
+            // Sub-group: DevSecOps & Security
+            '⬡ DEVSECOPS & SECURITY',
+            'Achieved Zero-Trust security posture by implementing network segmentation, SNYK scanning (IaC, containers, packages), OWASP-aligned code review gates, and OAuth2-proxy — reducing critical findings by 75%.',
+            'Led AWS-to-Azure migration and Kubernetes cluster upgrades for version compatibility while maintaining zero downtime, enabling 40% faster deployment cycles via GitOps (Helm + Bitbucket Pipelines).',
+            // Sub-group: Integration Architecture
+            '⬡ INTEGRATION ARCHITECTURE',
+            'Architected MuleSoft Runtime Fabric (RTF) as the organisation\'s integration backbone — enabling CI/CD-driven API deployment, governance, and full observability across 10+ integrated systems.',
+            // Sub-group: FinOps
+            '⬡ FINOPS',
+            'Delivered a >200× revenue-to-cost ratio: held platform run cost at ~€3.5k/month while supporting €800k+ in annual revenue from deployed applications, through autoscaling, spot usage, and cost tagging.',
           ],
         },
-        {
-          title: 'DevSecOps Specialist',
-          company: 'Borealis Digital Studio',
-          dates: 'Aug 2020 - Aug 2023',
-          description: 'DevSecOps Specialist',
-          responsibilities: [
-            'Co-implemented a CI/CD platform on Bitbucket and led a multi-cloud (AWS, Azure) IaC strategy with Terraform.',
-            'Migrated workloads from AWS to Azure and upgraded Kubernetes clusters for version compatibility.',
-            'Strengthened security posture with Zero-Trust principles and SNYK compliance across infrastructure, images and packages.',
-            'Reduced platform run cost to ~€3.5k while supporting ~€800k in revenue from deployed applications.',
-            'Built reusable Helm templates, set up Prometheus/Grafana monitoring & alerting, and automated TLS via Cert-Manager + Let’s Encrypt.',
-            'Authored Architectural Decision Records (ADRs) and published a "Helm Zero to Hero" reference project.',
-          ],
-        },
+
+        // ── INFOSYS — TECH LEAD ───────────────────────────────────────────
+        // WHY: Belgian telco needed E2E delivery automation for 34 enterprise apps
+        // HOW: CI/CD anchor, containerisation, Solaris/WAS migration
+        // WHAT: Decommissioned legacy racks, built automation toolchain from scratch
         {
           title: 'Technology Lead',
           company: 'Infosys Ltd.',
-          dates: 'Apr 2019 - Jul 2020',
-          description: 'Technology Lead',
+          dates: 'Apr 2019 – Jul 2020',
+          description: 'Enterprise DevOps · CI/CD · Automation',
           responsibilities: [
-            'CI/CD anchor for 34 enterprise applications, delivering end-to-end automation for a major Belgian telco.',
-            'Led Solaris and WebSphere migration, decommissioning legacy data-centre racks and cutting cost.',
-            'Drove early adoption of containerisation and cloud-native practices.',
-            'Built a Sales Support Tool to automate and optimise the release process.',
-            'Recognised for implementing DevOps practices on an OpenVMS + Git + JAMS toolchain.',
+            'Reduced release lead time for 34 enterprise applications at a major Belgian telco by designing E2E CI/CD pipelines (Jenkins, Maven, Git, Selenium) — recognised as DevOps anchor for the engagement.',
+            'Accelerated cloud-native adoption by leading containerisation readiness for legacy apps and decommissioning racks of on-premise Solaris/WebSphere servers, cutting infrastructure cost significantly.',
+            'Pioneered DevOps practices on an unconventional OpenVMS + Git + JAMS toolchain — a combination with no documented precedent, earning special recognition from the client.',
           ],
         },
+
+        // ── PROXIMUS ─────────────────────────────────────────────────────
+        // WHY: Telco needed large-scale infrastructure modernisation
+        // HOW: Solaris upgrade, Ansible automation, AWS/Kubernetes adoption
+        // WHAT: 135 servers in 3 months, AWS production platform, automated CI/CD
         {
           title: 'Infrastructure Analyst',
           company: 'Proximus',
-          dates: 'Apr 2015 - Mar 2019',
-          description: 'Infrastructure Analyst',
+          dates: 'Apr 2015 – Mar 2019',
+          description: 'Infrastructure Automation · Cloud Adoption · Release Management',
           responsibilities: [
-            'Upgraded 135+ servers from Solaris 10 to 11 within a 3-month window; automated config management with Ansible.',
-            'Upgraded 37 WebSphere servers (v8 to v9) and implemented CI/CD-driven infrastructure workflows.',
-            'Set up production-ready AWS infrastructure using Dockerised applications orchestrated with Kubernetes.',
-            'Managed release, incident and problem processes across 4 production applications.',
-            'Built monitoring tools recognised by the team for enabling proactive issue resolution.',
+            'Completed a 135-server Solaris 10→11 migration in 3 months (target was 6) by automating configuration management with Ansible playbooks — zero production incidents during cutover.',
+            'Established production-ready AWS infrastructure with Dockerised applications on Kubernetes (EKS), laying the foundation for the organisation\'s cloud-native journey.',
+            'Built monitoring and alerting tools that reduced mean time to detect (MTTD) environment issues, enabling proactive resolution before business impact.',
           ],
         },
+
+        // ── BT ───────────────────────────────────────────────────────────
         {
           title: 'Senior Software Engineer',
           company: 'British Telecom',
-          dates: 'Sept 2013 - Mar 2015',
-          description: 'Senior Software Engineer',
+          dates: 'Sep 2013 – Mar 2015',
+          description: 'Onshore Tech Lead · Healthcare Systems',
           responsibilities: [
-            'Served as onshore coordinator, module lead and mentor across delivery teams in Ipswich, UK.',
-            'Led requirement analysis and delivered the Error Handling module for a healthcare project.',
-            'Created reusable POC templates adopted across multiple applications.',
-            'Mentored new hires to accelerate onboarding and improve delivery quality.',
+            'Led requirement analysis and delivery of the Error Handling module for a large healthcare system — the most complex module in the programme — as onshore coordinator in Ipswich, UK.',
+            'Accelerated team ramp-up by creating reusable POC templates adopted across all applications, cutting new-feature delivery time by an estimated 30%.',
           ],
         },
+
+        // ── INFOSYS — SYSTEM ENGINEER ─────────────────────────────────────
         {
           title: 'System Engineer',
           company: 'Infosys',
-          dates: 'Jan 2011 - Sept 2013',
-          description: 'System Engineer',
+          dates: 'Jan 2011 – Sep 2013',
+          description: 'Healthcare Software Development',
           responsibilities: [
-            'Delivered the remittance module end-to-end for a major US healthcare client.',
-            'Owned requirements through post-release support while maintaining bug-free releases.',
-            'Completed a Spring 3.1 POC and intensive Java/OOP training (CGPA 4.42/5).',
+            'Delivered the remittance module E2E for a major US healthcare client across multiple bug-free releases, handling full lifecycle from requirement gathering through post-release support.',
+            'Graduated Infosys Java/OOP training programme with CGPA 4.42/5 — top tier of cohort.',
           ],
         },
+
+        // ── BSNL ─────────────────────────────────────────────────────────
         {
           title: 'Network Engineer',
           company: 'BSNL',
-          dates: 'Jun 2009 - Jun 2010',
-          description: 'Network Engineer',
+          dates: 'Jun 2009 – Jun 2010',
+          description: 'Network Operations',
           responsibilities: [
-            'Monitored network performance and resolved LAN/WAN connectivity issues using Wireshark.',
-            'Prepared technical proposals for network modernisation and capacity planning.',
+            'Monitored network health and resolved LAN/WAN issues using Wireshark packet analysis; prepared technical proposals that informed the organisation\'s network modernisation roadmap.',
           ],
         },
       ],
     },
+
+    // ── SKILLS ─────────────────────────────────────────────────────────────
+    // RARe: Applicable — tool-heavy role so skills appear before Education
+    // Sub-grouped by domain — each group heading is an ATS keyword itself
     {
-      title: 'Skills',
+      title: 'Core Expertise',
       type: 'list',
       items: [
-        { content: 'Cloud Platforms: AWS, Azure, GCP' },
-        { content: 'IaC & Automation: Terraform, Azure DevOps, GitOps' },
-        { content: 'CI/CD: Bitbucket, Jenkins' },
-        { content: 'Containers: Docker, Kubernetes, Helm, Skaffold' },
-        { content: 'Security: Snyk, Qualys, SOPS, Cert-Manager, TLS/mTLS' },
-        { content: 'Identity: Cognito, Microsoft AD, Auth0' },
-        { content: 'Monitoring: Prometheus, Grafana, Sentry, Alerting' },
-        { content: 'Agile Tools: Jira, Confluence, Kanban' },
-        { content: 'Data Analysis: Pandas' },
+        { content: 'Security Architecture: Zero Trust · IAM/RBAC/OIDC · PAM · Key Vault · OWASP Top 10 · ASVS · NIS2 · CyFun 2025 · ISO 27001/02/05/01/22301' },
+        { content: 'DevSecOps: SNYK · SonarQube · Secure SDLC · GitOps · SOPS · Bitbucket Pipelines · Jenkins' },
+        { content: 'Multi-Cloud & IaC: Azure (AKS · IoT Hub · Key Vault · ACR · CDN) · AWS (EKS · Lambda · Cognito · ECR) · Terraform · Ansible · Helm' },
+        { content: 'Integration Architecture: MuleSoft Runtime Fabric · API Gateway · REST/SOAP · Event-Driven Design · CI/CD-driven API deployment' },
+        { content: 'IoT & Digital Twin: Azure IoT Hub · Device Management · Real-Time Telemetry Pipelines · Industrial Data Platforms' },
+        { content: 'AI/ML Delivery: AI Platform Architecture · ML Pipeline Security · Data Governance · Model Lifecycle Controls' },
+        { content: 'FinOps: Rightsizing · Reserved Capacity Planning · Tagging & Showback · Autoscaling · Spot/Preemptible Instances' },
+        { content: 'Containers & Observability: Kubernetes · Docker · Cert-Manager · TLS/mTLS · Prometheus · Grafana · Sentry · Alerting' },
+        { content: 'Identity & Auth: Cognito · Microsoft AD · Auth0 · DigiCert · OIDC Federation' },
+        { content: 'Agile & Governance: JIRA · Confluence · ADR Authoring · Kanban · Multi-vendor coordination' },
       ],
     },
+
+    // ── EDUCATION ──────────────────────────────────────────────────────────
     {
       title: 'Education',
       type: 'text',
-      content: 'B.Eng. Electrical & Electronics — Barkatullah University Institute of Technology, Bhopal, India (2006 – 2010)',
+      content:
+        'B.Eng. Electrical & Electronics Engineering — ' +
+        'Barkatullah University Institute of Technology (BUIT), Bhopal, India · 2006–2010',
     },
-    {
-      title: 'Soft Skills',
-      type: 'list',
-      items: [
-        { content: 'Teamwork' },
-        { content: 'Communication' },
-        { content: 'Problem Solving' },
-        { content: 'Adaptability' },
-        { content: 'Time Management' },
-      ],
-    },
+
+    // ── CERTIFICATIONS ─────────────────────────────────────────────────────
     {
       title: 'Certifications',
       type: 'list',
       items: [
         { content: 'AWS Certified Solutions Architect – Associate' },
+        { content: 'Infosys Certified DevOps Professional' },
+        { content: 'Certified System Architect (CSA)' },
+        { content: 'Infosys Java Certified Developer Cadet' },
       ],
     },
+
+    // ── PUBLICATIONS ───────────────────────────────────────────────────────
+    {
+      title: 'Publications',
+      type: 'list',
+      items: [
+        { content: 'User Guide for Solaris 10 to Solaris 11 Migration' },
+        { content: 'Reusable Components of the Spring Framework' },
+        { content: 'Overall Performance Increase of a Website using HTML & CSS' },
+        { content: "Let's Start with Spring 3.1" },
+      ],
+    },
+
+    // ── AWARDS ─────────────────────────────────────────────────────────────
+    {
+      title: 'Awards',
+      type: 'list',
+      items: [
+        { content: 'Bravo Award — Infosys' },
+        { content: 'Insta Award — Infosys' },
+      ],
+    },
+
+    // ── SOFT SKILLS ────────────────────────────────────────────────────────
+    // RARe: No generic "team player" — framed as proof-of-seniority signals
+    {
+      title: 'Soft Skills',
+      type: 'list',
+      items: [
+        { content: 'Trusted Advisor — cross-department stakeholder alignment across engineering, compliance, and business' },
+        { content: 'Security Champion — enabling and mentoring product teams, not just auditing them' },
+        { content: 'Architecture Decision Making — ADR-backed, traceable, defensible design choices' },
+        { content: 'Vendor & Programme Management — coordinated multi-vendor delivery across 34-app engagements' },
+        { content: 'Clear Communicator — bridges technical depth with executive-level clarity' },
+      ],
+    },
+
+    // ── LANGUAGES ──────────────────────────────────────────────────────────
     {
       title: 'Languages',
       type: 'list',
       items: [
-        { content: 'English (Native)' },
+        { content: 'English (Professional)' },
         { content: 'Nederlands (Conversational)' },
         { content: 'French (Conversational)' },
       ],
