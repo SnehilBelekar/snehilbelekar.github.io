@@ -23,30 +23,15 @@ const resumeData: ResumeData = {
     {
       title: 'Samenvatting',
       type: 'text',
-      content: `Technologie:
-Ontwerp, definitie en evolutiestrategie voor het Digital Twin-programma.
-Leiding over AWS landing zone richting een multi-cloudstrategie.
-Leiding over AZURE landing zone richting een multi-cloudstrategie.
-
-Beveiliging:
-Implementatie van governance- en compliancekader geïntegreerd in het ecosysteem zodat beveiliging hiervan profiteert.
-Implementatie van beveiligingscontroles in operationele processen via GITOPS.
-Goed bekend met ISO27001, ISO23247, ISO27002, ISO27005, ISO27701, ISO22301, NIS2.
-
-FinOps:
-Implementatie van FinOps-werkwijze.
-
-Automatisering | DevSecOps:
-GitOps-werkwijze voor het Digital Twin-programma.
-Ontwerp en strategie voor Mulesoft als onderdeel van RTF-fabric en het uitrollen en beheren van applicaties.
-Beheer van externe leveranciers en optreden als Trusted Advisor.
-Stimuleren van metriek-gebaseerde besluitvorming.
-Business continuity en disaster recovery plan.
-Standaardisatie en onderhoudbaarheid van het gehele platform.
-
-IT-professional met uitstekende ervaring in DevOps en Agile praktijken.
-Proactief en zelfverzekerd met uitstekende technische, communicatieve en probleemoplossende vaardigheden.
-Ervaring met diverse technologieën en een goede mix van programmeerkennis.`,
+      content:
+        'Strategische, beveiligingsgerichte platformarchitect met 15+ jaar ervaring in het ontwerpen ' +
+        'van multi-cloud bedrijfslandingszones en het toepassen van secure-by-design-principes in ' +
+        'complexe SDLC. Bewezen expertise in het vertalen van regelgeving—NIS2, ISO 27001/02/05, ' +
+        'ISO 27701, ISO 22301—in uitvoerbare technische controles en geautomatiseerde architectuurgaranties. ' +
+        'Erkend voor het leiden van DevSecOps-transformaties, het native integreren van beveiliging in ' +
+        'CI/CD-pijplijnen en GitOps-workflows, en het bevorderen van op metriek gebaseerde governance ' +
+        'voor grootschalige initiatieven zoals Digital Twin-programma\'s. Vertrouwde adviseur die ' +
+        'organisaties in staat stelt veilig op schaal te groeien met behoud van compliance-posture.',
     },
     {
       title: 'Ervaring',

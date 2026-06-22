@@ -31,18 +31,18 @@ const resumeData: ResumeData = {
 
     // ── SUMMARY ────────────────────────────────────────────────────────────
     // RARe: Applicable — leads with strongest suit, 30-sec scannable, no fluff
-    // Max 4 lines. Answers: Who are you? What do you do? Why should we care?
+    // Positioning: Platform Architect | DevSecOps | Compliance & Governance
     {
       title: 'Summary',
       type: 'text',
       content:
-        'Senior Technical Architect with 15+ years turning complex compliance obligations — ' +
-        'NIS2, ISO 27001/02/05, ISO 27701, ISO 22301, OWASP Top 10, CyFun 2025 — into ' +
-        'engineering-ready controls across multi-cloud (Azure, AWS) and hybrid platforms. ' +
-        'Hands-on across the full stack: DevSecOps pipelines, IoT/Digital Twin architecture, ' +
-        'MuleSoft integration, IaC (Terraform/GitOps), AI/ML delivery, and FinOps discipline ' +
-        'that achieved >200× revenue-to-cost ratio. Trusted advisor and security champion who ' +
-        'enables teams to ship fast without compromising security posture.',
+        'Strategic, security-focused Platform Architect with 15+ years designing multi-cloud ' +
+        'enterprise landing zones and driving secure-by-design principles across complex SDLC. ' +
+        'Proven expertise translating regulatory mandates—NIS2, ISO 27001/02/05, ISO 27701, ISO 22301— ' +
+        'into actionable technical controls and automated architecture guardrails. Recognized for leading ' +
+        'DevSecOps transformations, embedding security natively into CI/CD and GitOps workflows, and ' +
+        'advancing metrics-driven governance for large-scale initiatives like Digital Twin programs. ' +
+        'Trusted advisor enabling organizations to scale securely while maintaining compliance posture.',
     },
 
     // ── EXPERIENCE ─────────────────────────────────────────────────────────

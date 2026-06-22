@@ -23,30 +23,16 @@ const resumeData: ResumeData = {
     {
       title: 'Résumé',
       type: 'text',
-      content: `Technologie:
-Conception, définition et stratégie d'évolution de la plateforme pour le programme Digital Twin.
-Direction de la zone d’atterrissage AWS vers une stratégie multi-cloud.
-Direction de la zone d’atterrissage AZURE vers une stratégie multi-cloud.
-
-Sécurité:
-Mise en œuvre d’un cadre de gouvernance et de conformité intégré à l’écosystème pour renforcer la sécurité.
-Implémentation des contrôles de sécurité dans les processus opérationnels via GITOPS.
-Bonne connaissance des normes ISO27001, ISO23247, ISO27002, ISO27005, ISO27701, ISO22301, NIS2.
-
-FinOps:
-Mise en œuvre de la méthode FinOps.
-
-Automatisation | DevSecOps:
-Méthodologie GitOps pour le programme Digital Twin.
-Conception et définition de la stratégie pour Mulesoft dans le cadre du tissu RTF, déploiement et gestion des applications.
-Gestion des fournisseurs externes et rôle de conseiller de confiance.
-Promotion de la prise de décision basée sur les métriques.
-Plan de continuité d’activité et de reprise après sinistre.
-Standardisation et maintenabilité de la plateforme globale.
-
-Professionnel IT avec une excellente expérience en DevOps et pratiques Agile.
-Individu proactif et confiant avec d’excellentes compétences techniques, de communication et de résolution de problèmes.
-Expérience sur des technologies variées avec de solides connaissances en programmation.`,
+      content:
+        'Architecte de plateforme stratégique et axé sur la sécurité, avec 15+ ans d\'expérience ' +
+        'dans la conception de zones d\'atterrissage cloud multi-clouds et l\'application de principes ' +
+        'de sécurité par conception (secure-by-design) dans les SDLC complexes. Expertise reconnue ' +
+        'en traduction des mandats réglementaires—NIS2, ISO 27001/02/05, ISO 27701, ISO 22301—en ' +
+        'contrôles techniques actionnables et garde-fous d\'architecture automatisés. Reconnu pour ' +
+        'avoir mené des transformations DevSecOps, intégré la sécurité nativement dans les pipelines ' +
+        'CI/CD et workflows GitOps, et promu une gouvernance basée sur les métriques pour des initiatives ' +
+        'à grande échelle comme les programmes Digital Twin. Conseiller de confiance habilitant les ' +
+        'organisations à se développer de manière sécurisée tout en maintenant leur posture de conformité.',
     },
     {
       title: 'Expérience',
