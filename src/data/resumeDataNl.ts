@@ -35,10 +35,7 @@ const resumeData: ResumeData = {
     {
       title: 'Samenvatting',
       type: 'text',
-      content: `• Strategische, beveiligingsgerichte platformarchitect met 15+ jaar ervaring in het ontwerpen van multi-cloud bedrijfslandingszones en het toepassen van secure-by-design-principes in complexe SDLC.
-• Bewezen expertise in het vertalen van regelgeving—NIS2, ISO 27001/02/05, ISO 27701, ISO 22301—in uitvoerbare technische controles en geautomatiseerde architectuurgaranties.
-• Erkend voor het leiden van DevSecOps-transformaties, het native integreren van beveiliging in CI/CD-pijplijnen en GitOps-workflows, en het bevorderen van op metriek gebaseerde governance voor grootschalige initiatieven zoals Digital Twin-programma's.
-• Vertrouwde adviseur die organisaties in staat stelt veilig op schaal te groeien met behoud van compliance-posture.`,
+      content: `Strategische, beveiligingsgerichte platformarchitect met 15+ jaar ervaring in het ontwerpen van multi-cloud bedrijfslandingszones en het toepassen van secure-by-design-principes in complexe SDLC. Bewezen expertise in het vertalen van regelgeving—NIS2, ISO 27001/02/05, ISO 27701, ISO 22301—in uitvoerbare technische controles en geautomatiseerde architectuurgaranties. Erkend voor het leiden van DevSecOps-transformaties, het native integreren van beveiliging in CI/CD-pijplijnen en GitOps-workflows, en het bevorderen van op metriek gebaseerde governance voor grootschalige initiatieven zoals Digital Twin-programma's. Vertrouwde adviseur die organisaties in staat stelt veilig op schaal te groeien met behoud van compliance-posture.`,
     },
 
     // ── ERVARING ──────────────────────────────────────────────────────────
