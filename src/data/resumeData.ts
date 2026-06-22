@@ -17,6 +17,16 @@ const resumeData: ResumeData = {
     github: 'https://github.com/snehilbelekar',
   },
 
+  skillsMatrix: [
+    { category: 'Cloud', tools: ['AWS', 'Azure', 'GCP'] },
+    { category: 'Security', tools: ['OWASP', 'NIS2', 'ISO 27001', 'Snyk', 'Qualys'] },
+    { category: 'DevSecOps', tools: ['Bitbucket Pipelines', 'Jenkins', 'GitOps', 'SonarQube'] },
+    { category: 'IaC', tools: ['Terraform', 'Ansible', 'Azure DevOps'] },
+    { category: 'Integration', tools: ['MuleSoft Runtime Fabric', 'API Gateway', 'REST/SOAP'] },
+    { category: 'Monitoring', tools: ['Prometheus', 'Grafana', 'Sentry', 'Alerting'] },
+    { category: 'Containers', tools: ['Docker', 'Kubernetes', 'Helm', 'Skaffold'] },
+  ],
+
   sections: [
 
     // ── SUMMARY ────────────────────────────────────────────────────────────

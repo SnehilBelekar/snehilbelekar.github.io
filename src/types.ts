@@ -33,7 +33,13 @@ export interface ProjectItem {
 
 export type ListItem = { content: string };
 
+export interface SkillsMatrixItem {
+  category: string;
+  tools: string[];
+}
+
 export interface ResumeData {
   personalInfo: PersonalInfo;
+  skillsMatrix?: SkillsMatrixItem[];
   sections: Section[];
 }

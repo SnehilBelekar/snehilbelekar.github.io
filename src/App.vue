@@ -24,6 +24,10 @@
         :cv-url="currentResumePdf"
         :linkedin-url="resumeData.personalInfo.linkedin || ''"
       />
+      <CoreSkillsMatrix
+        v-if="currentSkillsMatrix.length"
+        :skills-matrix="currentSkillsMatrix"
+      />
       <header class="header-container">
         <div class="header-content">
           <div class="image-container">
@@ -111,6 +115,7 @@ import resumeDataFR from './data/resumeDataFr';
 import resumeDataNL from './data/resumeDataNl';
 import Section from './components/Section.vue';
 import HeroSection from './components/HeroSection.vue';
+import CoreSkillsMatrix from './components/CoreSkillsMatrix.vue';
 
 const currentLang = ref('EN');
 
@@ -143,12 +148,20 @@ const rightPanelSections = computed(() =>
   resumeData.value.sections.filter(
     section =>
       ![
-        'Skills', 'Languages', 'Soft Skills', 'Certifications', 'Education', 'Summary',
+        'Skills', 'Core Expertise', 'Languages', 'Soft Skills', 'Certifications', 'Education', 'Summary',
         'Compétences', 'Langues', 'Compétences douces', 'Certifications', 'Formation', 'Résumé',
         'Vaardigheden', 'Talen', 'Soft Skills', 'Certificeringen', 'Opleiding', 'Samenvatting'
       ].includes(section.title)
   )
 );
+
+const currentSkillsMatrix = computed(() => {
+  if (resumeData.value.skillsMatrix?.length) {
+    return resumeData.value.skillsMatrix;
+  }
+
+  return resumeDataEN.skillsMatrix || [];
+});
 
 const changeLang = () => {
   // No extra logic needed, computed properties will update automatically

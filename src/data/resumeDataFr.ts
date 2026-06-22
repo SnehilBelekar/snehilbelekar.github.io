@@ -10,6 +10,15 @@ const resumeData: ResumeData = {
     linkedin: 'https://www.linkedin.com/in/snehilbelekar',
     github: 'https://github.com/snehil03',
   },
+  skillsMatrix: [
+    { category: 'Cloud', tools: ['AWS', 'Azure', 'GCP'] },
+    { category: 'Securite', tools: ['OWASP', 'NIS2', 'ISO 27001', 'Snyk', 'Qualys'] },
+    { category: 'DevSecOps', tools: ['Bitbucket Pipelines', 'Jenkins', 'GitOps', 'SonarQube'] },
+    { category: 'IaC', tools: ['Terraform', 'Ansible', 'Azure DevOps'] },
+    { category: 'Integration', tools: ['MuleSoft Runtime Fabric', 'API Gateway', 'REST/SOAP'] },
+    { category: 'Monitoring', tools: ['Prometheus', 'Grafana', 'Sentry', 'Alerting'] },
+    { category: 'Conteneurs', tools: ['Docker', 'Kubernetes', 'Helm', 'Skaffold'] },
+  ],
   sections: [
     {
       title: 'Résumé',
