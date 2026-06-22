@@ -64,8 +64,8 @@
 }
 
 .hero__photo-wrap {
-  width: 126px;
-  height: 126px;
+  width: 180px;
+  height: 180px;
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -208,13 +208,13 @@
   }
 
   .hero__layout {
-    grid-template-columns: 148px minmax(0, 1fr);
-    gap: 1.35rem;
+    grid-template-columns: 250px minmax(0, 1fr);
+    gap: 1.75rem;
   }
 
   .hero__photo-wrap {
-    width: 140px;
-    height: 180px;
+    width: 250px;
+    height: 320px;
   }
 
   .hero__actions a {
