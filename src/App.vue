@@ -18,8 +18,6 @@
     <div class="content-wrapper">
       <HeroSection
         :cv-url="currentResumePdf"
-        :linkedin-url="resumeData.personalInfo.linkedin || ''"
-        :github-url="resumeData.personalInfo.github || ''"
         :email="resumeData.personalInfo.email || ''"
         :phone="resumeData.personalInfo.phone || ''"
         :location="resumeData.personalInfo.location || ''"

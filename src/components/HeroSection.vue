@@ -54,20 +54,12 @@
           <a :href="cvUrl" target="_blank" rel="noopener noreferrer">
             Download CV (PDF)
           </a>
-          <a :href="linkedinUrl" target="_blank" rel="noopener noreferrer" class="hero__secondary">
-            View on LinkedIn
-          </a>
         </nav>
 
         <div class="hero__meta" aria-label="Contact information">
           <a v-if="email" :href="`mailto:${email}`">Email: {{ email }}</a>
           <a v-if="phone" :href="`tel:${phone.replace(/\s+/g, '')}`">Phone: {{ phone }}</a>
           <span v-if="location">Location: {{ location }}</span>
-        </div>
-
-        <div class="hero__social" aria-label="Social links">
-          <a v-if="linkedinUrl" :href="linkedinUrl" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a v-if="githubUrl" :href="githubUrl" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </div>
@@ -77,8 +69,6 @@
 <script setup lang="ts">
 defineProps<{
   cvUrl: string;
-  linkedinUrl: string;
-  githubUrl: string;
   email: string;
   phone: string;
   location: string;

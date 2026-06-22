@@ -66,10 +66,10 @@
 .hero__photo-wrap {
   width: 126px;
   height: 126px;
-  border-radius: 50%;
+  border-radius: 4px;
   overflow: hidden;
-  border: 2px solid rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 0 2px rgba(0, 170, 170, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
 }
 
 .hero__photo {
@@ -161,8 +161,7 @@
   border-color: rgba(255, 255, 255, 0.85);
 }
 
-.hero__meta,
-.hero__social {
+.hero__meta {
   margin-top: 0.9rem;
   display: flex;
   flex-wrap: wrap;
@@ -172,20 +171,17 @@
   color: rgba(255, 255, 255, 0.92);
 }
 
-.hero__meta a,
-.hero__social a {
+.hero__meta a {
   color: var(--hero-text);
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.hero__meta a:hover,
-.hero__social a:hover {
+.hero__meta a:hover {
   color: var(--brand-turquoise);
 }
 
-.hero__meta a:focus-visible,
-.hero__social a:focus-visible {
+.hero__meta a:focus-visible {
   outline: 2px solid var(--hero-focus);
   outline-offset: 2px;
 }
@@ -217,8 +213,8 @@
   }
 
   .hero__photo-wrap {
-    width: 148px;
-    height: 148px;
+    width: 140px;
+    height: 180px;
   }
 
   .hero__actions a {
