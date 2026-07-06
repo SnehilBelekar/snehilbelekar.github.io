@@ -11,7 +11,7 @@ const resumeData: ResumeData = {
     name: 'Snehil Belekar',
     title: 'Senior Technical Architect — DevSecOps · Security Architecture · Multi-Cloud',
     email: 'snehil.belekar@yahoo.com',
-    phone: '(+32) 478841486',
+    phone: '(+32) 492344350',
     location: 'Brussels, Belgium',
     linkedin: 'https://www.linkedin.com/in/snehilbelekar',
     github: 'https://github.com/snehilbelekar',
@@ -56,7 +56,7 @@ Trusted advisor enabling organizations to scale securely while maintaining compl
           title: 'Technical Architect — Cloud & DC',
           company: 'YPTO Nv',
           dates: 'Feb 2025 – Present',
-          description: 'Security Architecture · Compliance · FinOps',
+          description: 'Mobility Transport · Security Architecture · Compliance · FinOps',
           responsibilities: [
             // Sub-group: Security & Compliance
             '⬡ SECURITY & COMPLIANCE',
@@ -81,7 +81,7 @@ Trusted advisor enabling organizations to scale securely while maintaining compl
           title: 'Technical Architect / DevSecOps Specialist',
           company: 'Borealis',
           dates: 'Aug 2020 – Jul 2025',
-          description: 'Digital Twin · IoT · Multi-Cloud · Integration Architecture',
+          description: 'Chemical Manufacturing · Digital Twin · IoT · Multi-Cloud · Integration Architecture',
           responsibilities: [
             // Sub-group: Platform & IoT
             '⬡ PLATFORM & IoT',
@@ -108,7 +108,7 @@ Trusted advisor enabling organizations to scale securely while maintaining compl
           title: 'Technology Lead',
           company: 'Infosys Ltd.',
           dates: 'Apr 2019 – Jul 2020',
-          description: 'Enterprise DevOps · CI/CD · Automation',
+          description: 'Telecommunications · Enterprise DevOps · CI/CD · Automation',
           responsibilities: [
             'Reduced release lead time for 34 enterprise applications at a major Belgian telco by designing E2E CI/CD pipelines (Jenkins, Maven, Git, Selenium) — recognised as DevOps anchor for the engagement.',
             'Accelerated cloud-native adoption by leading containerisation readiness for legacy apps and decommissioning racks of on-premise Solaris/WebSphere servers, cutting infrastructure cost significantly.',
@@ -137,7 +137,7 @@ Trusted advisor enabling organizations to scale securely while maintaining compl
           title: 'Senior Software Engineer',
           company: 'British Telecom',
           dates: 'Sep 2013 – Mar 2015',
-          description: 'Onshore Tech Lead · Healthcare Systems',
+          description: 'Telecommunications · Onshore Tech Lead · Java Development',
           responsibilities: [
             'Led requirement analysis and delivery of the Error Handling module for a large healthcare system — the most complex module in the programme — as onshore coordinator in Ipswich, UK.',
             'Accelerated team ramp-up by creating reusable POC templates adopted across all applications, cutting new-feature delivery time by an estimated 30%.',

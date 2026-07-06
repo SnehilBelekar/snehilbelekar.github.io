@@ -1,0 +1,902 @@
+{
+  "generatedAt": "2026-06-22T02:37:51.592Z",
+  "url": "http://127.0.0.1:4173",
+  "audits": [
+    {
+      "name": "desktop-default-motion",
+      "viewport": {
+        "width": 1366,
+        "height": 900,
+        "reducedMotion": "no-preference"
+      },
+      "title": "Snehil Belekar | Senior Technical Architect",
+      "meta": {
+        "description": "Senior Technical Architect in multi-cloud, DevSecOps, security compliance, FinOps, and digital twin delivery across Azure, AWS, and Kubernetes.",
+        "ogTitle": "Snehil Belekar | Senior Technical Architect",
+        "ogDescription": "Senior Technical Architect in multi-cloud, DevSecOps, security compliance, FinOps, and digital twin delivery across Azure, AWS, and Kubernetes.",
+        "ogImage": "http://127.0.0.1:4173/profile.jpg",
+        "hasPersonSchema": true
+      },
+      "axe": {
+        "violations": [],
+        "passesCount": 24,
+        "violationsCount": 0
+      },
+      "keyboardSequence": [
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Summary",
+          "href": "http://127.0.0.1:4173/#summary"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Experience",
+          "href": "http://127.0.0.1:4173/#experience"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Core Expertise",
+          "href": "http://127.0.0.1:4173/#core%20expertise"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Education",
+          "href": "http://127.0.0.1:4173/#education"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Certifications",
+          "href": "http://127.0.0.1:4173/#certifications"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Publications",
+          "href": "http://127.0.0.1:4173/#publications"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Awards",
+          "href": "http://127.0.0.1:4173/#awards"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Soft Skills",
+          "href": "http://127.0.0.1:4173/#soft%20skills"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Languages",
+          "href": "http://127.0.0.1:4173/#languages"
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "role": "",
+          "text": "ENFRNL",
+          "href": ""
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "role": "",
+          "text": "🖨️",
+          "href": ""
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Download CV (PDF)",
+          "href": "http://127.0.0.1:4173/resume/Snehil_Belekar_CV.pdf"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "View on LinkedIn",
+          "href": "https://www.linkedin.com/in/snehilbelekar"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/in/snehilbelekar"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "GitHub",
+          "href": "https://github.com/snehilbelekar"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Education",
+          "href": "http://127.0.0.1:4173/#"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Certifications",
+          "href": "http://127.0.0.1:4173/#"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Soft Skills",
+          "href": "http://127.0.0.1:4173/#"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Languages",
+          "href": "http://127.0.0.1:4173/#"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "",
+          "href": "https://www.linkedin.com/in/snehilbelekar/"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "",
+          "href": "https://github.com/Snehil03"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "",
+          "href": "mailto:snehil.belekar@yahoo.com"
+        },
+        {
+          "tag": "body",
+          "id": "",
+          "role": "",
+          "text": "SummaryExperienceCore ExpertiseEducationCertificationsPublicationsAwardsSoft SkillsLanguagesENFRNL \ud83d",
+          "href": ""
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Summary",
+          "href": "http://127.0.0.1:4173/#summary"
+        }
+      ],
+      "responsive": {
+        "viewportWidth": 1366,
+        "htmlOverflow": false,
+        "bodyOverflow": false,
+        "wideElements": []
+      },
+      "motion": {
+        "prefersReducedMotion": false,
+        "meshAnimationName": "hero-mesh-drift",
+        "meshAnimationDuration": "20s"
+      },
+      "structure": {
+        "headings": [
+          {
+            "level": "h1",
+            "text": "SnehilBelekar"
+          },
+          {
+            "level": "h2",
+            "text": "Core Skills"
+          },
+          {
+            "level": "h1",
+            "text": "Snehil Belekar"
+          },
+          {
+            "level": "h2",
+            "text": "Senior Technical Architect — DevSecOps · Security Architecture · Multi-Cloud"
+          },
+          {
+            "level": "h2",
+            "text": "Summary"
+          },
+          {
+            "level": "h2",
+            "text": "Education"
+          },
+          {
+            "level": "h2",
+            "text": "Certifications"
+          },
+          {
+            "level": "h2",
+            "text": "Soft Skills"
+          },
+          {
+            "level": "h2",
+            "text": "Languages"
+          },
+          {
+            "level": "h2",
+            "text": "Experience"
+          },
+          {
+            "level": "h3",
+            "text": "Technical Architect — Cloud & DC"
+          },
+          {
+            "level": "h4",
+            "text": "YPTO Nv | Feb 2025 – Present"
+          },
+          {
+            "level": "h3",
+            "text": "Technical Architect / DevSecOps Specialist"
+          },
+          {
+            "level": "h4",
+            "text": "Borealis | Aug 2020 – Jul 2025"
+          },
+          {
+            "level": "h3",
+            "text": "Technology Lead"
+          },
+          {
+            "level": "h4",
+            "text": "Infosys Ltd. | Apr 2019 – Jul 2020"
+          },
+          {
+            "level": "h3",
+            "text": "Infrastructure Analyst"
+          },
+          {
+            "level": "h4",
+            "text": "Proximus | Apr 2015 – Mar 2019"
+          },
+          {
+            "level": "h3",
+            "text": "Senior Software Engineer"
+          },
+          {
+            "level": "h4",
+            "text": "British Telecom | Sep 2013 – Mar 2015"
+          },
+          {
+            "level": "h3",
+            "text": "System Engineer"
+          },
+          {
+            "level": "h4",
+            "text": "Infosys | Jan 2011 – Sep 2013"
+          },
+          {
+            "level": "h3",
+            "text": "Network Engineer"
+          },
+          {
+            "level": "h4",
+            "text": "BSNL | Jun 2009 – Jun 2010"
+          },
+          {
+            "level": "h2",
+            "text": "Publications"
+          },
+          {
+            "level": "h2",
+            "text": "Awards"
+          }
+        ],
+        "sections": {
+          "hero": true,
+          "coreSkillsTable": true,
+          "summary": true,
+          "leftPanel": true,
+          "rightPanel": true,
+          "footer": true
+        },
+        "tableMeta": {
+          "headerCount": 2,
+          "rowCount": 7
+        }
+      },
+      "accessibilityTree": {
+        "source": "cdp-full-ax-tree",
+        "nodeCount": 633,
+        "sampleNodes": [
+          {
+            "role": "RootWebArea",
+            "name": "Snehil Belekar | Senior Technical Architect"
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "navigation",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "banner",
+            "name": "Snehil Belekar"
+          },
+          {
+            "role": "region",
+            "name": "Core Skills"
+          },
+          {
+            "role": "banner",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "complementary",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "contentinfo",
+            "name": ""
+          },
+          {
+            "role": "list",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "heading",
+            "name": "Snehil Belekar"
+          },
+          {
+            "role": "paragraph",
+            "name": ""
+          },
+          {
+            "role": "paragraph",
+            "name": ""
+          },
+          {
+            "role": "navigation",
+            "name": "Primary actions"
+          },
+          {
+            "role": "heading",
+            "name": "Core Skills"
+          },
+          {
+            "role": "table",
+            "name": "Core skills by category and tools"
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "heading",
+            "name": "Snehil Belekar"
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-360-reduced-motion",
+      "viewport": {
+        "width": 360,
+        "height": 740,
+        "reducedMotion": "reduce"
+      },
+      "title": "Snehil Belekar | Senior Technical Architect",
+      "meta": {
+        "description": "Senior Technical Architect in multi-cloud, DevSecOps, security compliance, FinOps, and digital twin delivery across Azure, AWS, and Kubernetes.",
+        "ogTitle": "Snehil Belekar | Senior Technical Architect",
+        "ogDescription": "Senior Technical Architect in multi-cloud, DevSecOps, security compliance, FinOps, and digital twin delivery across Azure, AWS, and Kubernetes.",
+        "ogImage": "http://127.0.0.1:4173/profile.jpg",
+        "hasPersonSchema": true
+      },
+      "axe": {
+        "violations": [],
+        "passesCount": 24,
+        "violationsCount": 0
+      },
+      "keyboardSequence": [
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Summary",
+          "href": "http://127.0.0.1:4173/#summary"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Experience",
+          "href": "http://127.0.0.1:4173/#experience"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Core Expertise",
+          "href": "http://127.0.0.1:4173/#core%20expertise"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Education",
+          "href": "http://127.0.0.1:4173/#education"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Certifications",
+          "href": "http://127.0.0.1:4173/#certifications"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Publications",
+          "href": "http://127.0.0.1:4173/#publications"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Awards",
+          "href": "http://127.0.0.1:4173/#awards"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Soft Skills",
+          "href": "http://127.0.0.1:4173/#soft%20skills"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Languages",
+          "href": "http://127.0.0.1:4173/#languages"
+        },
+        {
+          "tag": "select",
+          "id": "",
+          "role": "",
+          "text": "ENFRNL",
+          "href": ""
+        },
+        {
+          "tag": "button",
+          "id": "",
+          "role": "",
+          "text": "🖨️",
+          "href": ""
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Download CV (PDF)",
+          "href": "http://127.0.0.1:4173/resume/Snehil_Belekar_CV.pdf"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "View on LinkedIn",
+          "href": "https://www.linkedin.com/in/snehilbelekar"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "LinkedIn",
+          "href": "https://www.linkedin.com/in/snehilbelekar"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "GitHub",
+          "href": "https://github.com/snehilbelekar"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Education",
+          "href": "http://127.0.0.1:4173/#"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Certifications",
+          "href": "http://127.0.0.1:4173/#"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Soft Skills",
+          "href": "http://127.0.0.1:4173/#"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Languages",
+          "href": "http://127.0.0.1:4173/#"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "",
+          "href": "https://www.linkedin.com/in/snehilbelekar/"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "",
+          "href": "https://github.com/Snehil03"
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "",
+          "href": "mailto:snehil.belekar@yahoo.com"
+        },
+        {
+          "tag": "body",
+          "id": "",
+          "role": "",
+          "text": "SummaryExperienceCore ExpertiseEducationCertificationsPublicationsAwardsSoft SkillsLanguagesENFRNL \ud83d",
+          "href": ""
+        },
+        {
+          "tag": "a",
+          "id": "",
+          "role": "",
+          "text": "Summary",
+          "href": "http://127.0.0.1:4173/#summary"
+        }
+      ],
+      "responsive": {
+        "viewportWidth": 360,
+        "htmlOverflow": false,
+        "bodyOverflow": false,
+        "wideElements": []
+      },
+      "motion": {
+        "prefersReducedMotion": true,
+        "meshAnimationName": "none",
+        "meshAnimationDuration": "1e-05s"
+      },
+      "structure": {
+        "headings": [
+          {
+            "level": "h1",
+            "text": "SnehilBelekar"
+          },
+          {
+            "level": "h2",
+            "text": "Core Skills"
+          },
+          {
+            "level": "h1",
+            "text": "Snehil Belekar"
+          },
+          {
+            "level": "h2",
+            "text": "Senior Technical Architect — DevSecOps · Security Architecture · Multi-Cloud"
+          },
+          {
+            "level": "h2",
+            "text": "Summary"
+          },
+          {
+            "level": "h2",
+            "text": "Education"
+          },
+          {
+            "level": "h2",
+            "text": "Certifications"
+          },
+          {
+            "level": "h2",
+            "text": "Soft Skills"
+          },
+          {
+            "level": "h2",
+            "text": "Languages"
+          },
+          {
+            "level": "h2",
+            "text": "Experience"
+          },
+          {
+            "level": "h3",
+            "text": "Technical Architect — Cloud & DC"
+          },
+          {
+            "level": "h4",
+            "text": "YPTO Nv | Feb 2025 – Present"
+          },
+          {
+            "level": "h3",
+            "text": "Technical Architect / DevSecOps Specialist"
+          },
+          {
+            "level": "h4",
+            "text": "Borealis | Aug 2020 – Jul 2025"
+          },
+          {
+            "level": "h3",
+            "text": "Technology Lead"
+          },
+          {
+            "level": "h4",
+            "text": "Infosys Ltd. | Apr 2019 – Jul 2020"
+          },
+          {
+            "level": "h3",
+            "text": "Infrastructure Analyst"
+          },
+          {
+            "level": "h4",
+            "text": "Proximus | Apr 2015 – Mar 2019"
+          },
+          {
+            "level": "h3",
+            "text": "Senior Software Engineer"
+          },
+          {
+            "level": "h4",
+            "text": "British Telecom | Sep 2013 – Mar 2015"
+          },
+          {
+            "level": "h3",
+            "text": "System Engineer"
+          },
+          {
+            "level": "h4",
+            "text": "Infosys | Jan 2011 – Sep 2013"
+          },
+          {
+            "level": "h3",
+            "text": "Network Engineer"
+          },
+          {
+            "level": "h4",
+            "text": "BSNL | Jun 2009 – Jun 2010"
+          },
+          {
+            "level": "h2",
+            "text": "Publications"
+          },
+          {
+            "level": "h2",
+            "text": "Awards"
+          }
+        ],
+        "sections": {
+          "hero": true,
+          "coreSkillsTable": true,
+          "summary": true,
+          "leftPanel": true,
+          "rightPanel": true,
+          "footer": true
+        },
+        "tableMeta": {
+          "headerCount": 2,
+          "rowCount": 7
+        }
+      },
+      "accessibilityTree": {
+        "source": "cdp-full-ax-tree",
+        "nodeCount": 724,
+        "sampleNodes": [
+          {
+            "role": "RootWebArea",
+            "name": "Snehil Belekar | Senior Technical Architect"
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "navigation",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "banner",
+            "name": "Snehil Belekar"
+          },
+          {
+            "role": "region",
+            "name": "Core Skills"
+          },
+          {
+            "role": "banner",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "complementary",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "contentinfo",
+            "name": ""
+          },
+          {
+            "role": "list",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "heading",
+            "name": "Snehil Belekar"
+          },
+          {
+            "role": "paragraph",
+            "name": ""
+          },
+          {
+            "role": "paragraph",
+            "name": ""
+          },
+          {
+            "role": "navigation",
+            "name": "Primary actions"
+          },
+          {
+            "role": "heading",
+            "name": "Core Skills"
+          },
+          {
+            "role": "table",
+            "name": "Core skills by category and tools"
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "generic",
+            "name": ""
+          },
+          {
+            "role": "none",
+            "name": ""
+          },
+          {
+            "role": "heading",
+            "name": "Snehil Belekar"
+          }
+        ]
+      }
+    }
+  ]
+}

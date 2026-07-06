@@ -11,7 +11,7 @@ const resumeData: ResumeData = {
     name: 'Snehil Belekar',
     title: 'Architecte Technique Senior — DevSecOps · Architecture de Sécurité · Multi-Cloud',
     email: 'snehil.belekar@yahoo.com',
-    phone: '(+32) 478841486',
+    phone: '(+32) 492344350',
     location: 'Bruxelles, Belgique',
     linkedin: 'https://www.linkedin.com/in/snehilbelekar',
     github: 'https://github.com/snehilbelekar',
