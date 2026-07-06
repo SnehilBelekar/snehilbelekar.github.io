@@ -54,6 +54,9 @@
           <a :href="cvUrl" target="_blank" rel="noopener noreferrer">
             Download CV (PDF)
           </a>
+          <a href="/blogs/">
+            Read My Blog ✍️
+          </a>
         </nav>
 
         <div class="hero__meta" aria-label="Contact information">
