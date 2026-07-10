@@ -3,111 +3,367 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blogs | Snehil Belekar</title>
-    <meta
-      name="description"
-      content="Technical blogs by Snehil Belekar on DevSecOps, cloud architecture, and platform engineering."
-    />
+    <title>Tech Wire | Snehil Belekar</title>
+    <meta name="description" content="Tech Newsroom — in-depth articles by Snehil Belekar on DevSecOps, cloud architecture, and platform engineering." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
     <style>
-      :root {
-        --bg: #f8f8f8;
-        --text: #333333;
-        --muted: #555555;
-        --card: #ffffff;
-        --accent: #1f7a3f;
-      }
+      *, *::before, *::after { box-sizing: border-box; }
 
-      * {
-        box-sizing: border-box;
+      :root {
+        --bg:      #f8f8f8;
+        --paper:   #fefefe;
+        --ink:     #111111;
+        --muted:   #555555;
+        --rule:    #222222;
+        --accent:  #1a1a1a;
+        --tag-bg:  #111111;
+        --tag-fg:  #ffffff;
+        --read-more: #111111;
       }
 
       body {
         margin: 0;
-        font-family: "Avenir Next", "Segoe UI", sans-serif;
-        color: var(--text);
         background: var(--bg);
+        color: var(--ink);
+        font-family: 'Lora', Georgia, serif;
         min-height: 100vh;
       }
 
-      main {
-        max-width: 880px;
-        margin: 0 auto;
-        padding: 56px 20px 72px;
+      /* ── MASTHEAD ── */
+      .masthead {
+        background: var(--paper);
+        border-bottom: 3px double var(--rule);
+        text-align: center;
+        padding: 28px 20px 16px;
       }
-
-      h1 {
-        margin: 0 0 8px;
-        font-size: clamp(2rem, 4vw, 3rem);
-      }
-
-      p {
-        margin: 0;
+      .masthead__eyebrow {
+        font-family: 'Lora', serif;
+        font-size: 0.72rem;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
         color: var(--muted);
-      }
-
-      .cards {
-        margin-top: 28px;
-        display: grid;
-        gap: 14px;
-      }
-
-      .card {
-        background: var(--card);
-        border: 1px solid #d7e2d1;
-        border-radius: 14px;
-        padding: 16px;
-      }
-
-      .card h2 {
         margin: 0 0 6px;
-        font-size: 1.2rem;
+      }
+      .masthead__title {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(2.4rem, 6vw, 4.2rem);
+        font-weight: 900;
+        letter-spacing: -0.02em;
+        margin: 0;
+        line-height: 1;
+        color: var(--ink);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.35em;
+      }
+      .masthead__logo {
+        width: clamp(2.4rem, 6vw, 4rem);
+        height: clamp(2.4rem, 6vw, 4rem);
+        flex-shrink: 0;
+      }
+      .masthead__rule {
+        border: none;
+        border-top: 1px solid var(--rule);
+        margin: 14px auto 0;
+        max-width: 640px;
+      }
+      .masthead__meta {
+        margin: 8px 0 0;
+        font-size: 0.72rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--muted);
+        display: flex;
+        justify-content: center;
+        gap: 24px;
       }
 
-      .card p {
-        margin: 0 0 10px;
+      /* ── PAGE WRAPPER ── */
+      .page {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 0 20px 72px;
       }
 
-      a {
-        color: var(--accent);
-        text-decoration: none;
+      /* ── SECTION LABEL ── */
+      .section-label {
+        margin: 32px 0 0;
+        padding-bottom: 6px;
+        border-bottom: 3px solid var(--rule);
+        font-family: 'Playfair Display', serif;
+        font-size: 0.78rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+        color: var(--ink);
+      }
+
+      /* ── ARTICLE LIST ── */
+      .articles {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .articles li {
+        border-bottom: 1px solid #cccccc;
+      }
+      .articles li:last-child {
+        border-bottom: none;
+      }
+
+      /* ── SINGLE ARTICLE ROW ── */
+      .article-row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 24px;
+        align-items: start;
+        padding: 22px 0;
+      }
+
+      .article-body {}
+
+      .article-tag {
+        display: inline-block;
+        background: var(--tag-bg);
+        color: var(--tag-fg);
+        font-family: 'Lora', serif;
+        font-size: 0.65rem;
         font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        padding: 2px 7px;
+        margin-bottom: 8px;
       }
 
-      a:hover {
+      .article-headline {
+        font-family: 'Playfair Display', Georgia, serif;
+        font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+        font-weight: 700;
+        line-height: 1.25;
+        margin: 0 0 8px;
+        color: var(--ink);
+      }
+
+      .article-deck {
+        font-family: 'Lora', serif;
+        font-size: 0.92rem;
+        line-height: 1.65;
+        color: var(--muted);
+        margin: 0;
+        max-width: 68ch;
+      }
+
+      .article-byline {
+        margin-top: 10px;
+        font-size: 0.72rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #888;
+        font-family: 'Lora', serif;
+        font-style: italic;
+      }
+
+      /* ── READ MORE SIDE COLUMN ── */
+      .article-aside {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+        padding-top: 4px;
+        min-width: 110px;
+      }
+
+      .read-more {
+        display: inline-block;
+        font-family: 'Lora', serif;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--read-more);
+        text-decoration: none;
+        border: 1.5px solid var(--rule);
+        padding: 6px 14px;
+        white-space: nowrap;
+        transition: background 0.15s, color 0.15s;
+      }
+      .read-more:hover {
+        background: var(--rule);
+        color: #fff;
+      }
+
+      .coming-soon-pill {
+        font-family: 'Lora', serif;
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #999;
+        border: 1.5px dashed #ccc;
+        padding: 6px 14px;
+        white-space: nowrap;
+      }
+
+      /* ── FOOTER NAV ── */
+      .footer-nav {
+        margin-top: 36px;
+        padding-top: 14px;
+        border-top: 1px solid #cccccc;
+        font-family: 'Lora', serif;
+        font-size: 0.85rem;
+      }
+      .footer-nav a {
+        color: var(--ink);
+        text-decoration: none;
+        font-style: italic;
+      }
+      .footer-nav a:hover {
         text-decoration: underline;
       }
 
-      .back {
-        display: inline-block;
-        margin-top: 26px;
+      /* ── RESPONSIVE ── */
+      @media (max-width: 560px) {
+        .article-row {
+          grid-template-columns: 1fr;
+          gap: 14px;
+        }
+        .article-aside {
+          align-items: flex-start;
+        }
       }
     </style>
   </head>
   <body>
-    <main>
-      <h1>Blogs</h1>
-      <p>Insights on cloud, DevSecOps, compliance engineering, and architecture decisions.</p>
 
-      <section class="cards" aria-label="Blog posts">
-        <article class="card">
-          <h2>Europe Just Realized It Doesn't Own Its Own Data</h2>
-          <p>Why digital sovereignty moved from policy language to an urgent cloud architecture question.</p>
-          <a href="/blogs/europe-data-sovereignty/">Read article →</a>
-        </article>
+    <!-- MASTHEAD -->
+    <header class="masthead" role="banner">
+      <p class="masthead__eyebrow">Snehil Belekar — Technical Writing</p>
+      <h1 class="masthead__title">
+        <!-- Circuit-globe logo -->
+        <svg class="masthead__logo" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="tw-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1565c0"/>
+              <stop offset="100%" stop-color="#42a5f5"/>
+            </linearGradient>
+            <clipPath id="tw-clip">
+              <circle cx="60" cy="60" r="52"/>
+            </clipPath>
+          </defs>
 
-        <article class="card">
-          <h2>Scaling Azure Governance: Policy-as-Code with GitOps</h2>
-          <p>How to design and implement a GitOps-driven, declarative Azure Policy framework using Terraform to automate compliance, RBAC, and cost optimization at scale.</p>
-          <a href="/blogs/grc/">Read article →</a>
-        </article>
+          <!-- filled circle background -->
+          <circle cx="60" cy="60" r="52" fill="url(#tw-grad)" opacity="0.08"/>
 
-        <article class="card">
-          <h2>Coming Soon: NIS2 Controls as Engineering Work Items</h2>
-          <p>How to convert regulatory obligations into actionable backlog items and measurable outcomes.</p>
-        </article>
-      </section>
+          <!-- outer ring — full -->
+          <circle cx="60" cy="60" r="52" stroke="url(#tw-grad)" stroke-width="5"/>
 
-      <a class="back" href="/">← Back to home</a>
-    </main>
+          <!-- segmented arc gaps top-left and top-right (mimicking the reference logo) -->
+          <path d="M20 32 A52 52 0 0 1 60 8"  stroke="url(#tw-grad)" stroke-width="5" stroke-linecap="round"/>
+          <path d="M60 8  A52 52 0 0 1 100 32" stroke="url(#tw-grad)" stroke-width="5" stroke-linecap="round"/>
+
+          <!-- gap lines to simulate split -->
+          <line x1="19" y1="31" x2="28" y2="44" stroke="#f8f8f8" stroke-width="6"/>
+          <line x1="101" y1="31" x2="92" y2="44" stroke="#f8f8f8" stroke-width="6"/>
+
+          <!-- vertical trunk -->
+          <line x1="60" y1="60" x2="60" y2="86" stroke="url(#tw-grad)" stroke-width="4" stroke-linecap="round"/>
+
+          <!-- left arm: elbow up -->
+          <line x1="60" y1="74" x2="38" y2="74" stroke="url(#tw-grad)" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="38" y1="74" x2="38" y2="58" stroke="url(#tw-grad)" stroke-width="3.5" stroke-linecap="round"/>
+
+          <!-- right arm: elbow up -->
+          <line x1="60" y1="74" x2="82" y2="74" stroke="url(#tw-grad)" stroke-width="3.5" stroke-linecap="round"/>
+          <line x1="82" y1="74" x2="82" y2="58" stroke="url(#tw-grad)" stroke-width="3.5" stroke-linecap="round"/>
+
+          <!-- upper-left diagonal branch -->
+          <line x1="60" y1="60" x2="42" y2="42" stroke="url(#tw-grad)" stroke-width="3.5" stroke-linecap="round"/>
+          <!-- upper-right diagonal branch -->
+          <line x1="60" y1="60" x2="78" y2="42" stroke="url(#tw-grad)" stroke-width="3.5" stroke-linecap="round"/>
+
+          <!-- nodes -->
+          <circle cx="60" cy="60" r="5.5" fill="#1565c0"/>
+          <circle cx="60" cy="86" r="4"   fill="#1565c0"/>
+          <circle cx="38" cy="58" r="4"   fill="#1565c0"/>
+          <circle cx="82" cy="58" r="4"   fill="#1565c0"/>
+          <circle cx="42" cy="42" r="4"   fill="#1565c0"/>
+          <circle cx="78" cy="42" r="4"   fill="#1565c0"/>
+
+          <!-- bottom leaf nodes -->
+          <line x1="60" y1="86" x2="48" y2="86" stroke="url(#tw-grad)" stroke-width="3" stroke-linecap="round"/>
+          <line x1="60" y1="86" x2="72" y2="86" stroke="url(#tw-grad)" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="48" cy="86" r="3" fill="#42a5f5"/>
+          <circle cx="72" cy="86" r="3" fill="#42a5f5"/>
+        </svg>
+        Tech Wire
+      </h1>
+      <hr class="masthead__rule" />
+      <div class="masthead__meta">
+        <span>DevSecOps · Cloud · Compliance</span>
+        <span>Brussels, Belgium</span>
+      </div>
+    </header>
+
+    <div class="page">
+
+      <p class="section-label">Latest Articles</p>
+
+      <ul class="articles" aria-label="Blog posts">
+
+        <!-- Article 1 -->
+        <li>
+          <div class="article-row">
+            <div class="article-body">
+              <span class="article-tag">Data Sovereignty</span>
+              <h2 class="article-headline">Europe Just Realized It Doesn't Own Its Own Data</h2>
+              <p class="article-deck">Why digital sovereignty moved from policy language to an urgent cloud architecture question — and what engineers must do before the next regulation cycle.</p>
+              <p class="article-byline">By Snehil Belekar &nbsp;·&nbsp; Cloud Architecture</p>
+            </div>
+            <aside class="article-aside" aria-label="Read Europe data sovereignty article">
+              <a class="read-more" href="/blogs/europe-data-sovereignty/">Read More →</a>
+            </aside>
+          </div>
+        </li>
+
+        <!-- Article 2 -->
+        <li>
+          <div class="article-row">
+            <div class="article-body">
+              <span class="article-tag">Governance</span>
+              <h2 class="article-headline">Scaling Azure Governance: Policy-as-Code with GitOps</h2>
+              <p class="article-deck">How to design and implement a GitOps-driven, declarative Azure Policy framework using Terraform to automate compliance, RBAC, and cost optimisation at scale.</p>
+              <p class="article-byline">By Snehil Belekar &nbsp;·&nbsp; DevSecOps · IaC</p>
+            </div>
+            <aside class="article-aside" aria-label="Read Azure governance article">
+              <a class="read-more" href="/blogs/grc/">Read More →</a>
+            </aside>
+          </div>
+        </li>
+
+        <!-- Article 3 — coming soon -->
+        <li>
+          <div class="article-row">
+            <div class="article-body">
+              <span class="article-tag">Compliance</span>
+              <h2 class="article-headline">NIS2 Controls as Engineering Work Items</h2>
+              <p class="article-deck">How to convert regulatory obligations into actionable backlog items, measurable outcomes, and automated guardrails your team can actually ship.</p>
+              <p class="article-byline">By Snehil Belekar &nbsp;·&nbsp; NIS2 · Security Engineering</p>
+            </div>
+            <aside class="article-aside">
+              <span class="coming-soon-pill">Coming Soon</span>
+            </aside>
+          </div>
+        </li>
+
+      </ul>
+
+      <nav class="footer-nav" aria-label="Site navigation">
+        <a href="/">← Back to Portfolio</a>
+      </nav>
+
+    </div>
   </body>
 </html>
