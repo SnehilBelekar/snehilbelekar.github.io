@@ -1,5 +1,135 @@
-# Vue 3 + TypeScript + Vite
+# snehilbelekar.github.io
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Personal portfolio and résumé site for **Snehil Belekar** — Senior Technical Architect specialising in DevSecOps, Security Architecture, Multi-Cloud (Azure · AWS · GCP), IoT, and FinOps.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+Live at [snehilbelekar.github.io](https://snehilbelekar.github.io)
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | [Vue 3](https://vuejs.org/) with `<script setup>` SFCs |
+| Language | TypeScript |
+| Build tool | [Vite 6](https://vitejs.dev/) |
+| Testing | [Vitest](https://vitest.dev/) + [@vue/test-utils](https://test-utils.vuejs.org/) |
+| Accessibility audit | [axe-core](https://github.com/dequelabs/axe-core) via Playwright |
+| Deployment | GitHub Pages (pushed from `main`) |
+
+---
+
+## Project Structure
+
+```
+├── index.html              # App entry point (sets favicon, meta tags, CSS)
+├── src/
+│   ├── App.vue             # Root component — sticky nav, language switcher, section layout
+│   ├── main.ts             # Vue app bootstrap
+│   ├── components/         # Presentational components (HeroSection, Section, CoreSkillsMatrix, …)
+│   ├── data/
+│   │   ├── resumeData.ts   # English résumé content
+│   │   ├── resumeDataFr.ts # French résumé content
+│   │   └── resumeDataNl.ts # Dutch résumé content
+│   ├── styles/             # Global CSS (main.css, hero.css)
+│   ├── types.ts            # Shared TypeScript types (ResumeData, Section, …)
+│   └── utils/formatters.ts # Shared formatting helpers
+├── public/
+│   ├── profile.jpg         # Hero profile photo
+│   ├── cv.png              # Favicon image
+│   ├── blogs/              # Static blog pages (GRC, Europe Data Sovereignty)
+│   └── resume/             # Downloadable PDF résumés (EN / FR / NL)
+├── scripts/
+│   └── a11y-audit.mjs      # Accessibility audit runner (axe-core + Playwright)
+└── reports/
+    └── a11y-report.json    # Latest accessibility audit output
+```
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js ≥ 18
+- npm ≥ 9
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run dev server
+
+```bash
+npm run dev
+# → http://localhost:5173
+```
+
+### Build for production
+
+```bash
+npm run build
+# Output written to dist/
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+---
+
+## Testing
+
+Run the component unit-test suite:
+
+```bash
+npm test
+```
+
+Watch mode:
+
+```bash
+npm run test:watch
+```
+
+### Accessibility audit
+
+Requires a running dev server (`npm run dev`) in a separate terminal:
+
+```bash
+node scripts/a11y-audit.mjs
+# Results written to reports/a11y-report.json
+```
+
+---
+
+## Features
+
+- **Multilingual résumé** — switch between English 🇬🇧, French 🇫🇷, and Dutch 🇳🇱 at runtime via the language selector in the top nav.
+- **Sticky navigation** — smooth-scrolls to each résumé section; automatically folds on mobile with a home-toggle button.
+- **Core Skills Matrix** — tabular skills overview rendered from typed data, no manual HTML editing required.
+- **Static blog** — standalone HTML pages under `/blogs/` with custom Vite dev-server routing so they work in both dev and production.
+- **PDF download** — direct link to the latest résumé PDF served from `/resume/`.
+- **Accessibility-first** — axe-core audit baked into the project with a JSON report artifact.
+
+---
+
+## Deployment
+
+The site is deployed to GitHub Pages automatically from the `main` branch. After pushing:
+
+```bash
+git push origin main
+```
+
+GitHub Actions (or the configured Pages workflow) builds and publishes the `dist/` directory.
+
+---
+
+## License
+
+This project is personal portfolio work. Content (text, photos, PDF résumé) is © Snehil Belekar. The source code structure may be freely referenced for learning purposes.
