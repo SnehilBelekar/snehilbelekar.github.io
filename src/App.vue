@@ -112,6 +112,7 @@ const stickyNavRef = ref<HTMLElement | null>(null);
 const MOBILE_BREAKPOINT = 900;
 const SCROLL_DELTA_THRESHOLD = 3;
 const MIN_SCROLL_BEFORE_FOLD = 8;
+const TOP_UNFOLD_THRESHOLD = 2;
 let lastScrollY = 0;
 let scrollRafId: number | null = null;
 let mobileFoldStartY = MIN_SCROLL_BEFORE_FOLD;
@@ -248,7 +249,7 @@ const updateMobileNavFoldState = (currentScrollY: number) => {
     return;
   }
 
-  if (normalizedScrollY <= 0) {
+  if (normalizedScrollY <= TOP_UNFOLD_THRESHOLD) {
     isMobileNavFolded.value = false;
     lastScrollY = 0;
     return;
@@ -264,10 +265,6 @@ const updateMobileNavFoldState = (currentScrollY: number) => {
   if (scrollDelta > 0 && normalizedScrollY > mobileFoldStartY) {
     if (!isMobileNavFolded.value) {
       isMobileNavFolded.value = true;
-    }
-  } else if (scrollDelta < 0) {
-    if (isMobileNavFolded.value) {
-      isMobileNavFolded.value = false;
     }
   }
 
