@@ -1,8 +1,9 @@
-# snehilbelekar.github.io
+# Snehil Belekar Cv
 
 Personal portfolio and résumé site for **Snehil Belekar** — Senior Technical Architect specialising in DevSecOps, Security Architecture, Multi-Cloud (Azure · AWS · GCP), IoT, and FinOps.
 
 Live at [snehilbelekar.github.io](https://snehilbelekar.github.io)
+Blogs at [snehilbelekar.github.io/blogs/](https://snehilbelekar.github.io/blogs)
 
 ---
 
@@ -16,34 +17,6 @@ Live at [snehilbelekar.github.io](https://snehilbelekar.github.io)
 | Testing | [Vitest](https://vitest.dev/) + [@vue/test-utils](https://test-utils.vuejs.org/) |
 | Accessibility audit | [axe-core](https://github.com/dequelabs/axe-core) via Playwright |
 | Deployment | GitHub Pages (pushed from `main`) |
-
----
-
-## Project Structure
-
-```
-├── index.html              # App entry point (sets favicon, meta tags, CSS)
-├── src/
-│   ├── App.vue             # Root component — sticky nav, language switcher, section layout
-│   ├── main.ts             # Vue app bootstrap
-│   ├── components/         # Presentational components (HeroSection, Section, CoreSkillsMatrix, …)
-│   ├── data/
-│   │   ├── resumeData.ts   # English résumé content
-│   │   ├── resumeDataFr.ts # French résumé content
-│   │   └── resumeDataNl.ts # Dutch résumé content
-│   ├── styles/             # Global CSS (main.css, hero.css)
-│   ├── types.ts            # Shared TypeScript types (ResumeData, Section, …)
-│   └── utils/formatters.ts # Shared formatting helpers
-├── public/
-│   ├── profile.jpg         # Hero profile photo
-│   ├── cv.png              # Favicon image
-│   ├── blogs/              # Static blog pages (GRC, Europe Data Sovereignty)
-│   └── resume/             # Downloadable PDF résumés (EN / FR / NL)
-├── scripts/
-│   └── a11y-audit.mjs      # Accessibility audit runner (axe-core + Playwright)
-└── reports/
-    └── a11y-report.json    # Latest accessibility audit output
-```
 
 ---
 
