@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <nav :class="['sticky-nav', { 'is-folded': isMobileNavFolded }]">
+  <div id="app" :class="{ 'is-mobile-nav-folded': isMobileNavFolded }">
+    <nav ref="stickyNavRef" :class="['sticky-nav', { 'is-folded': isMobileNavFolded }]">
       <ul style="display: flex; align-items: center;">
         <li v-for="section in resumeData.sections" :key="section.title">
           <a :href="'#' + section.title.toLowerCase()" @click.prevent="scrollToSection(section.title)">{{ section.title }}</a>
@@ -97,7 +97,7 @@
 
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted, nextTick, watch } from 'vue';
 import resumeDataEN from './data/resumeData';
 import resumeDataFR from './data/resumeDataFr';
 import resumeDataNL from './data/resumeDataNl';
@@ -107,6 +107,7 @@ import CoreSkillsMatrix from './components/CoreSkillsMatrix.vue';
 
 const currentLang = ref('EN');
 const isMobileNavFolded = ref(false);
+const stickyNavRef = ref<HTMLElement | null>(null);
 
 const MOBILE_BREAKPOINT = 900;
 const SCROLL_DELTA_THRESHOLD = 3;
@@ -229,6 +230,11 @@ const upsertPersonJsonLd = () => {
 
 const isMobileViewport = () => window.innerWidth <= MOBILE_BREAKPOINT;
 
+const updateMobileNavHeight = () => {
+  const navHeight = stickyNavRef.value?.offsetHeight || 0;
+  document.documentElement.style.setProperty('--mobile-nav-height', `${navHeight}px`);
+};
+
 const updateMobileFoldStartY = () => {
   mobileFoldStartY = MIN_SCROLL_BEFORE_FOLD;
 };
@@ -281,6 +287,7 @@ const handleScrollForMobileNav = () => {
 
 const handleResizeForMobileNav = () => {
   updateMobileFoldStartY();
+  updateMobileNavHeight();
 
   if (!isMobileViewport()) {
     isMobileNavFolded.value = false;
@@ -308,6 +315,10 @@ onMounted(() => {
   upsertMetaTag('property', 'og:image', ogImage);
 
   upsertPersonJsonLd();
+
+  nextTick(() => {
+    updateMobileNavHeight();
+  });
 });
 
 onUnmounted(() => {
@@ -317,5 +328,11 @@ onUnmounted(() => {
 
   window.removeEventListener('scroll', handleScrollForMobileNav);
   window.removeEventListener('resize', handleResizeForMobileNav);
+  document.documentElement.style.removeProperty('--mobile-nav-height');
+});
+
+watch(currentLang, async () => {
+  await nextTick();
+  updateMobileNavHeight();
 });
 </script>
