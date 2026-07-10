@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="sticky-nav">
+    <nav :class="['sticky-nav', { 'is-folded': isMobileNavFolded }]">
       <ul style="display: flex; align-items: center;">
         <li v-for="section in resumeData.sections" :key="section.title">
           <a :href="'#' + section.title.toLowerCase()" @click.prevent="scrollToSection(section.title)">{{ section.title }}</a>
@@ -15,6 +15,15 @@
         </li>     
       </ul>
     </nav>
+    <button
+      v-if="isMobileNavFolded"
+      class="mobile-home-toggle"
+      type="button"
+      aria-label="Show header tabs"
+      @click="handleMobileHomeClick"
+    >
+      <span aria-hidden="true">&#8962;</span>
+    </button>
     <div class="content-wrapper">
       <HeroSection
         :cv-url="currentResumePdf"
@@ -88,7 +97,7 @@
 
 
 <script setup lang="ts">
-import { ref, computed, onMounted } from 'vue';
+import { ref, computed, onMounted, onUnmounted } from 'vue';
 import resumeDataEN from './data/resumeData';
 import resumeDataFR from './data/resumeDataFr';
 import resumeDataNL from './data/resumeDataNl';
@@ -97,6 +106,14 @@ import HeroSection from './components/HeroSection.vue';
 import CoreSkillsMatrix from './components/CoreSkillsMatrix.vue';
 
 const currentLang = ref('EN');
+const isMobileNavFolded = ref(false);
+
+const MOBILE_BREAKPOINT = 900;
+const SCROLL_DELTA_THRESHOLD = 3;
+const MIN_SCROLL_BEFORE_FOLD = 8;
+let lastScrollY = 0;
+let scrollRafId: number | null = null;
+let mobileFoldStartY = MIN_SCROLL_BEFORE_FOLD;
 
 const META_TITLE = 'Snehil Belekar | Senior Technical Architect';
 const META_DESCRIPTION =
@@ -210,7 +227,77 @@ const upsertPersonJsonLd = () => {
   script.text = JSON.stringify(schema);
 };
 
+const isMobileViewport = () => window.innerWidth <= MOBILE_BREAKPOINT;
+
+const updateMobileFoldStartY = () => {
+  mobileFoldStartY = MIN_SCROLL_BEFORE_FOLD;
+};
+
+const updateMobileNavFoldState = (currentScrollY: number) => {
+  const normalizedScrollY = Math.max(0, currentScrollY);
+
+  if (!isMobileViewport()) {
+    isMobileNavFolded.value = false;
+    lastScrollY = normalizedScrollY;
+    return;
+  }
+
+  if (normalizedScrollY <= 0) {
+    isMobileNavFolded.value = false;
+    lastScrollY = 0;
+    return;
+  }
+
+  const scrollDelta = normalizedScrollY - lastScrollY;
+
+  if (Math.abs(scrollDelta) < SCROLL_DELTA_THRESHOLD) {
+    lastScrollY = normalizedScrollY;
+    return;
+  }
+
+  if (scrollDelta > 0 && normalizedScrollY > mobileFoldStartY) {
+    if (!isMobileNavFolded.value) {
+      isMobileNavFolded.value = true;
+    }
+  } else if (scrollDelta < 0) {
+    if (isMobileNavFolded.value) {
+      isMobileNavFolded.value = false;
+    }
+  }
+
+  lastScrollY = normalizedScrollY;
+};
+
+const handleScrollForMobileNav = () => {
+  if (scrollRafId !== null) {
+    return;
+  }
+
+  scrollRafId = window.requestAnimationFrame(() => {
+    updateMobileNavFoldState(window.scrollY || window.pageYOffset);
+    scrollRafId = null;
+  });
+};
+
+const handleResizeForMobileNav = () => {
+  updateMobileFoldStartY();
+
+  if (!isMobileViewport()) {
+    isMobileNavFolded.value = false;
+  }
+};
+
+const handleMobileHomeClick = () => {
+  isMobileNavFolded.value = false;
+  lastScrollY = window.scrollY || window.pageYOffset;
+};
+
 onMounted(() => {
+  updateMobileFoldStartY();
+  lastScrollY = window.scrollY || window.pageYOffset;
+  window.addEventListener('scroll', handleScrollForMobileNav, { passive: true });
+  window.addEventListener('resize', handleResizeForMobileNav, { passive: true });
+
   document.title = META_TITLE;
 
   const ogImage = new URL('/profile.jpg', window.location.origin).toString();
@@ -221,5 +308,14 @@ onMounted(() => {
   upsertMetaTag('property', 'og:image', ogImage);
 
   upsertPersonJsonLd();
+});
+
+onUnmounted(() => {
+  if (scrollRafId !== null) {
+    window.cancelAnimationFrame(scrollRafId);
+  }
+
+  window.removeEventListener('scroll', handleScrollForMobileNav);
+  window.removeEventListener('resize', handleResizeForMobileNav);
 });
 </script>
